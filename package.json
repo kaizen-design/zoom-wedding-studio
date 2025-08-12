@@ -1,0 +1,25 @@
+{
+  "name": "zwicky",
+  "version": "1.0.0",
+  "description": "Zwicky Wedding website",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Denis Bondarchuk",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-minify": "^3.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.50.1"
+  }
+}

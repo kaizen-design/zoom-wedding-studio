@@ -1,0 +1,25 @@
+.btn {
+  gap: 1rem;
+  
+  & > svg {
+    path {
+      transition: $transition-base;
+    }
+  }
+
+  &.btn-outline-primary {
+    svg {
+      path {
+        fill: $primary;
+      }
+    }
+    &:hover, &:focus-visible {
+      color: $gray-100;
+      svg {
+        path {
+          fill: $gray-100;
+        }
+      }
+    }
+  }
+}
