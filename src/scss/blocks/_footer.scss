@@ -1,0 +1,129 @@
+.footer {
+  background-color: $gray-900;
+  padding: 80px 0;
+  & > .container-xl {
+    gap: 60px;
+  }
+  .logo {
+    svg {
+      path {
+        transition: $transition-base;
+      }
+    }
+    &:hover {
+      svg {
+        path {
+          fill: $gray-200;
+        }
+      }
+    }
+  }
+}
+
+.footer-nav-menu {
+  gap: 30px;
+  border-top: 1px solid $primary;
+  border-bottom: 1px solid $primary;
+  padding: 10px 0;
+  li {
+    font-size: rem-calc(16px);
+    text-transform: uppercase;
+    font-weight: 300;
+    a {
+      color: $gray-700;
+      text-decoration: none;
+      transition: $transition-base;
+      border-bottom: 1px solid transparent;
+      &:hover, &:focus-visible {
+        color: $primary;
+        //border-color: $primary;
+      }
+      &.active {
+        color: $primary;
+        border-color: $primary;
+      }
+    }
+  }
+}
+
+.footer-contact-section {
+  gap: 10px;
+  .footer-phone {
+    font-size: rem-calc(30px);
+    color: $gray-100;
+    text-decoration: none;
+    transition: $transition-base;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.footer-socials-list {
+  gap: 20px;
+  & > li {
+    a {
+      border-width: 1px;
+      border-color: rgba(200, 168, 152, 0.3);
+      border-style: solid;
+      border-radius: 50%;
+      width: 33px;
+      height: 33px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: $transition-base;
+      &:hover, &:focus-visible {
+        //color: $gray-200;
+        //border-color: $primary;
+        background-color: $primary;
+        svg {
+          path, circle {
+            fill: $gray-900;
+          }
+        }
+      }
+      svg {
+        width: 18px;
+        height: 18px;
+        path, circle {
+          transition: $transition-base;
+          fill: $primary;
+        }
+      }
+    }
+  }
+}
+
+.footer-copyright {
+  gap: 10px;
+  .copyright {
+    color: $gray-600;
+    font-size: rem-calc(18px);
+    font-family: $font-family-serif;
+    font-weight: 700;
+  }
+}
+
+.privacy-menu {
+  gap: 10px;
+  & > li {
+    font-size: rem-calc(18px);
+    font-family: $font-family-serif;
+    font-weight: 700;
+    &:not(:last-child) {
+      &:after {
+        content: '|';
+        margin-left: 9px;
+      }
+    }
+    a {
+      color: $gray-600;
+      text-decoration: none;
+      transition: $transition-base;
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

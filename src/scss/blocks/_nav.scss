@@ -44,6 +44,7 @@
         width: 18px;
         height: 18px;
         path, circle {
+          transition: $transition-base;
           fill: $gray-200;
         }
       }
