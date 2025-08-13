@@ -7,6 +7,23 @@
     }
   }
 
+  &.btn-primary {
+    color: $white;
+    svg {
+      path {
+        fill: $white;
+      }
+    }
+    /* &:hover, &:focus-visible {
+      color: $gray-100;
+      svg {
+        path {
+          fill: $gray-100;
+        }
+      }
+    } */
+  }
+
   &.btn-outline-primary {
     svg {
       path {

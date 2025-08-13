@@ -1,0 +1,76 @@
+window.onload = () => {  
+  initHelpers(); 
+  //initOffCanvasNav();
+  //initTabs();
+  //initAccordion();
+  //initSmoothScroll();
+};
+
+function initOffCanvasNav() {
+  const handles = document.querySelectorAll(".off-canvas-toggle");
+  if (handles) {
+    handles.forEach(handle => {
+      handle.addEventListener("click", function () {
+        document.body.classList.toggle("off-canvas-open");
+      });
+    });
+  }  
+}
+
+function initTabs() {
+  const $tabLinks = document.querySelectorAll('.tab-link');
+  const $tabContents = document.querySelectorAll('.tab-content');
+
+  if (!$tabLinks && !$tabContents) return;
+  
+  $tabLinks.forEach(link => {
+    ['click', 'mouseover'].forEach(evt => 
+      link.addEventListener(evt, function () {
+        if (this.classList.contains('active')) return;  
+        
+        $tabLinks.forEach(tab => tab.classList.remove('active'));
+        $tabContents.forEach(content => content.classList.remove('active'));
+        
+        link.classList.add('active');
+        document.getElementById(link.getAttribute('data-tab')).classList.add('active');
+      }, false)
+    );
+  });
+}
+
+function initAccordion() {
+  const accordions = document.querySelectorAll(".accordion");
+  if (accordions) {
+    accordions.forEach(accordion => {
+      accordion.addEventListener("click", function () {
+        const panel = this.nextElementSibling;
+        if (panel) {
+          this.classList.toggle("open");        
+          panel.style.maxHeight = panel.style.maxHeight ? null : panel.scrollHeight + "px";
+        }        
+      });
+    });
+  }
+}
+
+function initSmoothScroll($el = document) {
+  $el.querySelectorAll('.smoothScroll').forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+      const href = this.getAttribute("href").replace("/", ""), 
+            el = document.querySelector(href); 
+      try {
+        el.scrollIntoView({ block: "start", behavior: "smooth" });
+      } catch (e) {
+        console.error(`Element with the ${href} ID not found`)
+      }  
+    });
+  });
+}
+
+function initHelpers() {
+  //  Prevent jump to top on "#" links
+  document.querySelectorAll("a[href='#']").forEach(link => {
+    link.addEventListener("click", e => e.preventDefault());
+  });
+}
