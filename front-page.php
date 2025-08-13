@@ -12,6 +12,7 @@ get_header(); ?>
   <?php get_template_part( 'template-parts/section', 'marquee' ); ?>
   <?php get_template_part( 'template-parts/section', 'masonry' ); ?>
   <?php get_template_part( 'template-parts/section', 'slider' ); ?>
+  <?php get_template_part( 'template-parts/section', 'services' ); ?>
 </main>
 
 <?php get_footer();
