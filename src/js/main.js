@@ -1,5 +1,6 @@
 window.onload = () => {  
   initHelpers(); 
+  AOS.init();
   //initOffCanvasNav();
   //initTabs();
   //initAccordion();

@@ -5,7 +5,7 @@
       Projects
     </h2>
     <div class="project-list row">
-      <div class="col-lg-3">
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up">
         <a href="#" class="project-card card text-white">
           <img 
             src="<?= get_template_directory_uri() ?>/assets/tmp/project-1.webp" 
@@ -24,7 +24,7 @@
           </div>
         </a>
       </div>
-      <div class="col-lg-3">
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
         <a href="#" class="project-card card text-white">
           <img 
             src="<?= get_template_directory_uri() ?>/assets/tmp/project-2.webp" 
@@ -43,7 +43,7 @@
           </div>
         </a>
       </div>
-      <div class="col-lg-3">
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
         <a href="#" class="project-card card text-white">
           <img 
             src="<?= get_template_directory_uri() ?>/assets/tmp/project-3.webp" 
@@ -62,7 +62,7 @@
           </div>
         </a>
       </div>
-      <div class="col-lg-3">
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="900">
         <a href="#" class="project-card card text-white">
           <img 
             src="<?= get_template_directory_uri() ?>/assets/tmp/project-4.webp" 

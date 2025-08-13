@@ -6,7 +6,8 @@
     </div>  
     <div class="masonry-grid row" data-masonry='{"percentPosition": true }'>
       <?php foreach(range(1, 15) as $_i): ?>
-        <div class="col-lg-3">
+        <?php $delay = 0; ?>
+        <div class="col-6 col-sm-4 col-lg-3" data-aos="fade-up" data-aos-delay="<?= $delay ?>">
           <a 
             href="<?= get_template_directory_uri() ?>/assets/tmp/gallery/gallery-<?= $_i ?>.webp" 
             class="masonry-card card"
@@ -20,6 +21,7 @@
             />
           </a>
         </div>
+        <?php $delay =+ 300; ?>
       <?php endforeach; ?>
     </div>
     <a href="#" class="btn btn-primary btn-lg d-flex align-items-center align-self-center">
