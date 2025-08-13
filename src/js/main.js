@@ -1,11 +1,50 @@
 window.onload = () => {  
   initHelpers(); 
+  initMasonry();
+  initPortfolioSlider();
   AOS.init();
   //initOffCanvasNav();
   //initTabs();
   //initAccordion();
   //initSmoothScroll();
 };
+
+function initMasonry() {
+  const $grid = document.querySelector('.masonry-grid');
+  if (!$grid) return;
+  new Masonry($grid, {
+    percentPosition: true
+  });
+}
+
+function initPortfolioSlider() {
+  const $slider = document.querySelector('.portfolio-slider');
+  if (!$slider) return;
+  const swiper = new Swiper($slider, {
+    spaceBetween: 20,
+    slidesPerView: 'auto',
+    freeMode: true,
+    //loop: true,
+    //allowTouchMove: false,
+      
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.slide-next',
+      prevEl: '.slide-prev',
+    },
+
+    pagination: {
+      type: 'fraction',
+      el: '.slides-counter',
+      renderFraction: function (currentClass, totalClass) {
+      return '<span class="' + currentClass + '"></span>' +
+              ' / ' +
+              '<span class="' + totalClass + '"></span>';
+      },
+    }
+  });
+}
 
 function initOffCanvasNav() {
   const handles = document.querySelectorAll(".off-canvas-toggle");

@@ -4,7 +4,7 @@
       <h2 class="section-title h1 mb-0">Wedding Photography</h2>
       <p class="mb-0">Each newlywed couple is a precious page from a huge wedding album that we create every day, every week, year after year!</p>
     </div>  
-    <div class="masonry-grid row" data-masonry='{"percentPosition": true }'>
+    <div class="masonry-grid row">
       <?php foreach(range(1, 15) as $_i): ?>
         <?php $delay = 0; ?>
         <div class="col-6 col-sm-4 col-lg-3" data-aos="fade-up" data-aos-delay="<?= $delay ?>">
@@ -16,8 +16,7 @@
             <img 
               src="<?= get_template_directory_uri() ?>/assets/tmp/gallery/gallery-<?= $_i ?>.webp" 
               class="w-100 img-fluid" 
-              alt="" 
-              loading="lazy" 
+              alt=""
             />
           </a>
         </div>

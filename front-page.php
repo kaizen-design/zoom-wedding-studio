@@ -11,11 +11,7 @@ get_header(); ?>
   <?php get_template_part( 'template-parts/section', 'projects' ); ?>
   <?php get_template_part( 'template-parts/section', 'marquee' ); ?>
   <?php get_template_part( 'template-parts/section', 'masonry' ); ?>
-  <?php while (have_posts()) : the_post(); ?>
-
-    <?php //the_content(); ?>
-
-  <?php endwhile; ?>
+  <?php get_template_part( 'template-parts/section', 'slider' ); ?>
 </main>
 
 <?php get_footer();
