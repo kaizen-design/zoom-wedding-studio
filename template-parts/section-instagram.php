@@ -2,8 +2,7 @@
   <div class="carousel">
     <div class="group">
       <?php foreach(range(1, 10) as $_i): ?>
-        <?php $delay = 0; ?>
-        <a href="#" class="instagram-card" data-aos="fade-left" data-delay="<?= $delay ?>">
+        <a href="#" class="instagram-card">
           <img 
             src="<?= get_template_directory_uri() ?>/assets/tmp/instagram/photo-<?= $_i ?>.webp" 
             class="w-100 h-100 img-fluid" 
@@ -11,12 +10,11 @@
             loading="lazy"
           />
         </a>
-        <?php $delay += 200; ?>
       <?php endforeach; ?>  
     </div>
     <div aria-hidden class="group">
       <?php foreach(range(1, 10) as $_i): ?>
-        <a href="#" class="instagram-card" data-aos="fade-right" data-delay="<?= $delay ?>">
+        <a href="#" class="instagram-card">
           <img 
             src="<?= get_template_directory_uri() ?>/assets/tmp/instagram/photo-<?= $_i ?>.webp" 
             class="w-100 h-100 img-fluid" 
@@ -24,7 +22,6 @@
             loading="lazy"
           />
         </a>
-        <?php $delay += 200; ?>
       <?php endforeach; ?> 
     </div>
   </div>
