@@ -5,7 +5,7 @@
         <span class="position-relative">Our Services</span>
       </h2>
       <div class="row">
-        <div class="col-xl-2 offset-xl-1" data-aos="fade-right" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+        <div class="col-lg-2 offset-xl-1" data-aos="fade-right" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
           <img 
             src="<?= get_template_directory_uri() ?>/assets/images/bird.webp" 
             class="img-fluid" 
@@ -13,7 +13,7 @@
             alt="Our Services"
           />
         </div>
-        <div class="col-xl-9 section-content d-flex flex-column">
+        <div class="col-lg-10 col-xl-9 section-content d-flex flex-column">
           <p class="mb-0" data-aos="fade-left" data-aos-delay="300" data-aos-anchor-placement="top-bottom">Zoom Wedding Studio offers you a full package of wedding services to&nbsp;create the best memories on your special day.</p>
           <ul class="services-list list-unstyled mb-0 d-flex align-items-center">
             <li data-aos="fade-left" data-aos-delay="300" data-aos-anchor-placement="top-bottom">Photography</li>

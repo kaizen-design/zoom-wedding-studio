@@ -9,7 +9,7 @@
       </div>
     </div>
     <div class="slider-row row">
-      <div class="col-xl-7 offset-xl-2" data-aos="fade-up">
+      <div class="col-lg-8 col-xl-7 offset-lg-2" data-aos="fade-up">
         <div class="slider-box d-flex flex-column">
           <div class="portfolio-slider swiper overflow-visible">
             <div class="swiper-wrapper d-flex">

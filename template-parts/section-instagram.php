@@ -16,7 +16,7 @@
     </div>
     <div aria-hidden class="group">
       <?php foreach(range(1, 10) as $_i): ?>
-        <a href="#" class="instagram-card" data-aos="fade-left" data-delay="<?= $delay ?>">
+        <a href="#" class="instagram-card" data-aos="fade-right" data-delay="<?= $delay ?>">
           <img 
             src="<?= get_template_directory_uri() ?>/assets/tmp/instagram/photo-<?= $_i ?>.webp" 
             class="w-100 h-100 img-fluid" 
