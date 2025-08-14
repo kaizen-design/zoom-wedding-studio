@@ -20,6 +20,12 @@
     opacity: 1;
     margin: 10px 0;
   }
+  .hamburger {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .nav-contact-list {
@@ -76,4 +82,28 @@
       }
     }
   }
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &:hover, &:focus-within {
+    & > span {
+      width: 34px;
+      background: $gray-100;
+      &:first-child, &:last-child {
+        width: 23px;
+      }
+    }
+  }
+  & > span {
+    height: 3px;
+    background: $gray-200;
+    width: 23px;
+    transition: $transition-base;
+    &:first-child, &:last-child {
+      width: 34px;
+    }
+  } 
 }
