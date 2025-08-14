@@ -15,6 +15,7 @@ get_header(); ?>
   <?php get_template_part( 'template-parts/section', 'services' ); ?>
   <?php get_template_part( 'template-parts/section', 'about-us' ); ?>
   <?php get_template_part( 'template-parts/section', 'contact' ); ?>
+  <?php get_template_part( 'template-parts/section', 'instagram' ); ?>
 </main>
 
 <?php get_footer();
