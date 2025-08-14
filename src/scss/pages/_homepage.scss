@@ -59,6 +59,7 @@
     gap: 30px 0;
     @include media-breakpoint-down(lg) {
       margin-top: 0;
+      gap: 20px 0;
     }
   }
 }
@@ -275,7 +276,7 @@
     }
   }
   .portfolio-slider-card {
-    //width: 480px;
+    
   }
 }
 
@@ -336,6 +337,9 @@
   .section-content {
     color: $green;
     gap: 30px;
+    @include media-breakpoint-down(lg) {
+      gap: 20px;
+    }
     p {
       font-size: rem-calc(30px);
       font-weight: 700;
@@ -345,10 +349,14 @@
   }
   .services-list {
     gap: 30px;
+    @include media-breakpoint-down(lg) {
+      gap: 20px;
+    }
     li {
       font-size: rem-calc(30px);
       font-weight: 700;
       font-family: $font-family-serif;
+      gap: 20px;
       svg {
         width: 34px;
         height: 34px;
@@ -412,6 +420,9 @@
     @include media-breakpoint-down(xl) {
       font-size: rem-calc(40px);
     }
+    @include media-breakpoint-down(lg) {
+      font-size: rem-calc(32px);
+    }
     .section-subtitle {
       font-family: $font-family-serif;
       font-weight: 700;
@@ -425,8 +436,16 @@
   background: $green;
   padding: 50px 30px 60px 30px;
   gap: 28px;
+  @include media-breakpoint-down(lg) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 20px;
+  }
   .btn-group {
     gap: 3px;
+    @include media-breakpoint-down(xl) {
+      flex-wrap: wrap;
+    } 
     .btn-check:checked {
       & + .btn {
         color: $gray-100;
@@ -444,18 +463,39 @@
       background: rgba(255, 255, 255, 0.1);
       margin: 0;
       padding: 9.5px;
+      @include media-breakpoint-down(xl) {
+        flex-basis: auto;
+      }
       &:hover {
         background: rgba(255, 255, 255, 0.3);
       }
     }
     & > label {
+      @include media-breakpoint-down(xl) {
+        border-radius: 0!important;
+      }
       &:first-of-type {
         border-top-left-radius: 23px;
         border-bottom-left-radius: 23px;
+        @include media-breakpoint-down(xl) {
+          border-bottom-left-radius: 0!important;
+          border-top-left-radius: 23px!important;
+          border-top-right-radius: 23px!important;
+          width: 100%;
+        }
+      }
+      &:nth-of-type(2) {
+         @include media-breakpoint-down(xl) {
+          border-bottom-left-radius: 23px!important;
+         }
       }
       &:last-of-type {
         border-top-right-radius: 23px;
         border-bottom-right-radius: 23px;
+        @include media-breakpoint-down(xl) {
+          border-top-right-radius: 0!important;
+          border-bottom-right-radius: 23px!important;
+        }
       }
     }
   }
@@ -483,8 +523,14 @@
   .form-footer {
     gap: 40px;
     margin-top: 12px;
+    @include media-breakpoint-down(lg) {
+      gap: 20px;
+    }
     .btn {
       min-width: 126px;
+      @include media-breakpoint-down(lg) {
+        min-width: 100%;
+      }
     }
     small {
       font-size: rem-calc(13px);
@@ -542,7 +588,7 @@
       background-color: $primary;
       svg {
         path, circle {
-          fill: $gray-100;
+          fill: $gray-900;
         }
       }
     }

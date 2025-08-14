@@ -1,7 +1,7 @@
 <section class="about-us-section">
   <div class="container-xl">
-     <div class="row justify-content-between">
-       <div class="section-content col-lg-6 col-xl-5 d-flex flex-column">
+     <div class="row justify-content-between gy-5">
+       <div class="section-content col-md-6 col-xl-5 d-flex flex-column">
          <h2 class="section-title text-uppercase mb-0" data-aos="fade-right">Top rated, award-winning service in LA</h2>
          <p class="lead mb-0" data-aos="fade-right" data-aos-delay="200" data-aos-anchor-placement="top-bottom">Zoom Wedding Studio highlights your special moment and creates the perfect experience of the most memorable day in your life.</p>
          <p class="mb-0" data-aos="fade-right" data-aos-delay="400" data-aos-anchor-placement="top-bottom">Each awards definitely symbolizes the lengths we go to make sure that the capturing of your wedding day is spot-on perfection.</p>
@@ -12,7 +12,7 @@
             </svg>
           </a>
        </div>
-       <div class="col-lg-6 col-xl-5 d-flex" data-aos="fade-left">
+       <div class="col-md-6 col-xl-5 d-flex" data-aos="fade-left">
          <img 
             src="<?= get_template_directory_uri() ?>/assets/tmp/awards.webp" 
             class="img-fluid mx-auto" 
