@@ -101,7 +101,7 @@
 
 .marquee-section {
   padding: 60px 0;
-  overflow: hidden;
+  overflow: clip;
   .animated-text {
     font-size: rem-calc(60px);
     font-family: $font-family-base;
@@ -338,6 +338,138 @@
           fill: $primary;
         }
       }
+    }
+  }
+}
+
+.about-us-section {
+  padding: 60px 0;
+  background: $gray-900 url('../images/about-us-bg.webp') no-repeat center center;
+  background-size: cover;
+  .section-content {
+    gap: 30px;
+    color: $white;
+    .section-title {
+      font-size: rem-calc(16px);
+      font-weight: 400;
+      font-family: $font-family-base;
+      color: $primary;
+    }
+    p {
+      font-size: rem-calc(18px);
+      line-height: 1.33;
+      font-weight: 300;
+      &.lead {
+        font-size: rem-calc(30px);
+        line-height: 1.13;
+        font-family: $font-family-serif;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.contact-section {
+  padding: 60px 0;
+  &:after {
+    content: '';
+    width: 100%;
+    height: 360px;
+    background: $white url("../images/contact-bg.webp") no-repeat top center;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .section-title {
+    color: $gray-900;
+    font-size: rem-calc(50px);
+    font-weight: 400;
+    font-family: $font-family-base;
+    line-height: 1;
+    gap: 20px;
+    letter-spacing: 2px;
+    .section-subtitle {
+      font-family: $font-family-serif;
+      font-weight: 700;
+      letter-spacing: normal;
+    }
+  }
+}
+
+.contact-form {
+  border-radius: 30px;
+  background: $green;
+  padding: 50px 30px 60px 30px;
+  gap: 28px;
+  .btn-group {
+    gap: 3px;
+    .btn-check:checked {
+      & + .btn {
+        color: $gray-100;
+        cursor: default;
+        background: $primary;
+      }
+    }
+    & > .btn {
+      flex-basis: 0;
+      flex-shrink: 0;
+      font-size: 18px;
+      text-transform: uppercase;
+      color: $gray-100;
+      border: none;
+      background: rgba(255, 255, 255, 0.1);
+      margin: 0;
+      padding: 9.5px;
+      &:hover {
+        background: rgba(255, 255, 255, 0.3);
+      }
+    }
+    & > label {
+      &:first-of-type {
+        border-top-left-radius: 23px;
+        border-bottom-left-radius: 23px;
+      }
+      &:last-of-type {
+        border-top-right-radius: 23px;
+        border-bottom-right-radius: 23px;
+      }
+    }
+  }
+  .form-control {
+    background: transparent;
+    color: $gray-100;
+    font-size: rem-calc(18px);
+    border: none;
+    border-bottom: 1px solid rgba(248, 247, 243, 0.3);
+    border-radius: 0;
+    font-weight: 300;
+    padding-left: 0;
+    padding-right: 0;
+    &::placeholder {
+      color: $gray-100;
+    }
+    &:focus {
+      box-shadow: none;
+      border-color: $gray-100;
+    }
+  }
+  textarea {
+    min-height: 122px;
+  }
+  .form-footer {
+    gap: 40px;
+    margin-top: 12px;
+    .btn {
+      min-width: 126px;
+    }
+    small {
+      font-size: rem-calc(13px);
+      font-weight: 300;
+      color: rgba(248, 247, 243, 0.6);
+      line-height: 1.33;
     }
   }
 }

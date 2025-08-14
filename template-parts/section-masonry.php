@@ -7,7 +7,7 @@
     <div class="masonry-grid row">
       <?php foreach(range(1, 15) as $_i): ?>
         <?php $delay = 300; ?>
-        <div class="col-6 col-sm-4 col-lg-3" data-aos="fade-up" data-aos-delay="<?= $delay ?>">
+        <div class="col-6 col-sm-4 col-lg-3" data-aos="fade-up" data-aos-delay="<?= $delay ?>" data-aos-anchor-placement="top-bottom">
           <a 
             href="<?= get_template_directory_uri() ?>/assets/tmp/gallery/gallery-<?= $_i ?>.webp" 
             class="masonry-card card"
