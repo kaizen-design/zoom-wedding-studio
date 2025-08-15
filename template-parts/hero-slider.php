@@ -6,7 +6,7 @@
     class="hero-img position-absolute z-0 top-0 bottom-0 start-0 end-0 object-fit-cover mx-auto img-fluid"
   />
   <div class="container-xl h-100 position-relative z-1 d-flex flex-column align-items-center justify-content-end text-center">
-    <h1 class="display-2 mb-4 mb-md-2" data-aos="fade-up">Captured Moments of&nbsp;Love</h1>
+    <h1 class="display-2 mb-4" data-aos="fade-up">Captured Moments of&nbsp;Love</h1>
     <p class="lead mb-0 text-uppercase mb-4 pb-md-3" data-aos="fade-up" data-aos-delay="300">WEDDING PHOTOGRAPHY AND VIDEOGRAPHY WITH LOVE</p>
     <a href="#" class="btn btn-outline-primary btn-lg d-flex align-items-center" data-aos="fade-right" data-aos-delay="600">
       Request price and availability
