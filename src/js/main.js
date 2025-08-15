@@ -2,8 +2,8 @@ window.onload = () => {
   initHelpers(); 
   initMasonry();
   initPortfolioSlider();
+  initOffCanvasNav();
   AOS.init();
-  //initOffCanvasNav();
   //initTabs();
   //initAccordion();
   //initSmoothScroll();

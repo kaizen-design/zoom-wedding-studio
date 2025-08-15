@@ -8,5 +8,6 @@
 
 <body>
 
+<?php get_template_part( 'template-parts/off', 'canvas-nav' ); ?>
 <?php get_template_part( 'template-parts/main', 'nav' ); ?>
 

@@ -61,7 +61,7 @@
         </div>
       </div>
     </div>
-    <a href="#" class="hamburger d-lg-none">
+    <a href="#" class="hamburger d-lg-none off-canvas-toggle">
       <span></span>
       <span></span>
       <span></span>
