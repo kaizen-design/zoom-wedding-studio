@@ -1,6 +1,8 @@
 .btn {
   gap: 1rem;
-  
+  @include media-breakpoint-down(sm) {
+    font-size: rem-calc(16px);
+  }
   & > svg {
     path {
       transition: $transition-base;
@@ -14,14 +16,6 @@
         fill: $white;
       }
     }
-    /* &:hover, &:focus-visible {
-      color: $gray-100;
-      svg {
-        path {
-          fill: $gray-100;
-        }
-      }
-    } */
   }
 
   &.btn-outline-primary {

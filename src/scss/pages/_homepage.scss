@@ -85,8 +85,21 @@
       margin-top: 30px;
     }
     @include media-breakpoint-down(sm) {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       gap: 15px;
+      margin-left: 0;
+      margin-right: 0;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+      &::-webkit-scrollbar { 
+          display: none; 
+      }
+      & > div {
+        padding-right: 0;
+        padding-left: 0;
+        max-width: 240px;
+      }
     }
   }
 }
@@ -214,6 +227,9 @@
   }
   .masonry-grid {
     margin-bottom: 30px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 15px;
+    }
     & > div {
       margin-bottom: 30px;
       @include media-breakpoint-down(xl) {
@@ -765,6 +781,14 @@
     width: 200px;
     height: 200px;
     overflow: hidden;
+    @include media-breakpoint-down(md) {
+      width: 160px;
+      height: 160px;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 120px;
+      height: 120px;
+    }
     &:hover {
       & > img {
         transform: scale(1.05);

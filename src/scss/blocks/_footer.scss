@@ -1,11 +1,21 @@
 .footer {
   background-color: $gray-900;
   padding: 80px 0 60px;
+  @include media-breakpoint-down(sm) {
+    padding: 40px 0;
+  }
   & > .container-xl {
     gap: 60px;
+    @include media-breakpoint-down(sm) {
+      gap: 30px;
+    }
   }
   .logo {
     svg {
+      @include media-breakpoint-down(sm) {
+        width: 103px;
+        height: auto;
+      }
       path {
         transition: $transition-base;
       }
@@ -100,6 +110,9 @@
 
 .footer-copyright {
   gap: 10px;
+  @include media-breakpoint-down(sm) {
+    gap: 5px;
+  }
   .copyright {
     color: $gray-600;
     font-size: rem-calc(18px);

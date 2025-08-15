@@ -3,6 +3,10 @@
   z-index: 99;
   .logo {
     svg {
+      @include media-breakpoint-down(sm) {
+        width: 103px;
+        height: auto;
+      }
       path {
         transition: $transition-base;
       }
