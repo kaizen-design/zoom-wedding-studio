@@ -10,6 +10,24 @@
       gap: 30px;
     }
   }
+  .col-12 {
+    @include media-breakpoint-down(lg) {
+      order: -1;
+    }
+  }
+  .col-6 {
+    @include media-breakpoint-down(lg) {
+      &:first-child {
+        padding-right: 0;
+      }
+      &:last-child {
+        padding-left: 0;
+      }
+    }
+    @include media-breakpoint-up(lg) {
+      flex: 1 0 0 !important;
+    }
+  }
   .logo {
     svg {
       @include media-breakpoint-down(sm) {
@@ -35,6 +53,12 @@
   border-top: 1px solid $primary;
   border-bottom: 1px solid $primary;
   padding: 10px 0;
+  @include media-breakpoint-down(lg) {
+    gap: 20px;
+  }
+  @include media-breakpoint-down(md) {
+    gap: 10px;
+  }
   li {
     font-size: rem-calc(16px);
     text-transform: uppercase;
