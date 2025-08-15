@@ -22,18 +22,11 @@ function initPortfolioSlider() {
   if (!$slider) return;
   const swiper = new Swiper($slider, {
     spaceBetween: 20,
-    slidesPerView: 'auto',
-    freeMode: true,
-    //loop: true,
-    //allowTouchMove: false,
-      
-
-    // Navigation arrows
+    slidesPerView: 1,
     navigation: {
       nextEl: '.slide-next',
       prevEl: '.slide-prev',
     },
-
     pagination: {
       type: 'fraction',
       el: '.slides-counter',
@@ -41,6 +34,13 @@ function initPortfolioSlider() {
       return '<span class="' + currentClass + '"></span>' +
               ' / ' +
               '<span class="' + totalClass + '"></span>';
+      },
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      576: {
+        slidesPerView: 'auto',
+        freeMode: true,
       },
     }
   });

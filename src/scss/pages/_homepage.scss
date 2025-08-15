@@ -20,6 +20,14 @@
   }
   h1 {
     color: $gray-100;
+    @include media-breakpoint-down(sm) {
+      font-size: rem-calc(36px);
+    }
+  }
+  .lead {
+    @include media-breakpoint-down(md) {
+      font-size: rem-calc(16px);
+    }
   }
   .hero-img {
     object-fit: cover;
@@ -31,6 +39,9 @@
 .projects-section {
   padding: 60px 0;
   overflow: hidden;
+  @include media-breakpoint-down(sm) {
+    padding: 40px 0;
+  }
   .section-title {
     font-size: rem-calc(180px);
     font-weight: 400;
@@ -40,6 +51,12 @@
     line-height: 1.2;
     @include media-breakpoint-down(lg) {
       font-size: rem-calc(120px);
+    }
+    @include media-breakpoint-down(md) {
+      font-size: rem-calc(80px);
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: rem-calc(60px);
     }
     .section-subtitle {
       font-size: rem-calc(40px);
@@ -51,6 +68,9 @@
       @include media-breakpoint-down(lg) {
         font-size: rem-calc(32px);
       }
+      @include media-breakpoint-down(md) {
+        font-size: rem-calc(24px);
+      }
     }
   }
   .project-list {
@@ -60,6 +80,13 @@
     @include media-breakpoint-down(lg) {
       margin-top: 0;
       gap: 20px 0;
+    }
+    @include media-breakpoint-down(md) {
+      margin-top: 30px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 20px;
+      gap: 15px;
     }
   }
 }
@@ -114,6 +141,9 @@
 .marquee-section {
   padding: 60px 0;
   overflow: clip;
+  @include media-breakpoint-down(sm) {
+    padding: 40px 0;
+  }
   .animated-text {
     font-size: rem-calc(60px);
     font-family: $font-family-base;
@@ -122,6 +152,12 @@
     white-space: nowrap;
     line-height: 1.4;
     animation: slide-in 20s linear infinite alternate;
+    @include media-breakpoint-down(md) {
+      font-size: rem-calc(45px);
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: rem-calc(30px);
+    }
     &.alt-direction {
       animation: slide-in-alt 20s linear infinite alternate;
     }
@@ -148,14 +184,22 @@
 
 .masonry-section {
   padding: 60px 0;
+  @include media-breakpoint-down(sm) {
+    padding: 40px 0;
+  }
   & > .container-xl {
     //gap: 60px;
   }
   .section-header {
     gap: 30px;
     margin-bottom: 60px;
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 40px;
+    }
     .section-title {
-
+      @include media-breakpoint-down(sm) {
+        font-size: rem-calc(30px)
+      }
     }
     p {
       color: $gray-600;
@@ -163,6 +207,9 @@
       font-weight: 300;
       line-height: 1.33;
       max-width: 630px;
+      @include media-breakpoint-down(sm) {
+        font-size: rem-calc(16px)
+      }
     }
   }
   .masonry-grid {
@@ -171,6 +218,9 @@
       margin-bottom: 30px;
       @include media-breakpoint-down(xl) {
         margin-bottom: 20px;
+      }
+      @include media-breakpoint-down(sm) {
+        margin-bottom: 15px;
       }
     }
   }
@@ -195,10 +245,20 @@
 .slider-section {
   padding: 60px 0;
   overflow: clip;
+  @include media-breakpoint-down(sm) {
+    padding: 40px 0;
+  }
   .section-header {
+    @include media-breakpoint-down(md) {
+      gap: 30px;
+    }
     .section-title {
       line-height: 1;
       max-width: 450px;
+      @include media-breakpoint-down(sm) {
+        max-width: none;
+        font-size: rem-calc(30px);
+      }
     }
     p {
       color: $gray-600;
@@ -206,6 +266,10 @@
       font-weight: 300;
       line-height: 1.33;
       max-width: 400px;
+      @include media-breakpoint-down(sm) {
+        font-size: rem-calc(16px);
+        max-width: none;
+      }
     }
   }
   .slider-row {
@@ -223,8 +287,18 @@
   padding: 30px;
   border-radius: 16px;
   gap: 30px;
+  @include media-breakpoint-down(md) {
+    padding: 30px 20px 20px;
+    gap: 20px;
+  }
+  @include media-breakpoint-down(sm) {
+    margin: 0 -15px;
+  }
   .slider-footer {
     gap: 30px;
+    @include media-breakpoint-down(md) {
+      gap: 20px;
+    }
     .slides-counter {
       font-family: $font-family-serif;
       font-size: rem-calc(30px);
@@ -269,10 +343,21 @@
 }
 
 .portfolio-slider {
+  width: 100%;
+  max-width: 100%;
+  max-height: 100vh; 
+  min-height: 0; 
+  min-width: 0; 
+  @include media-breakpoint-down(sm) {
+    overflow: hidden!important;
+  }
   .swiper-wrapper {
     transition-timing-function: linear!important;
     .swiper-slide {
       max-width: 480px;
+      @include media-breakpoint-down(sm) {
+        max-width: 100%;
+      }
     }
   }
   .portfolio-slider-card {
@@ -301,6 +386,9 @@
 
 .services-section {
   padding: 60px 0;
+  @include media-breakpoint-down(sm) {
+    padding: 40px 0;
+  }
 }
 
 .services-box {
@@ -312,26 +400,42 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+  @include media-breakpoint-down(sm) {
+    padding: 20px 15px;
+  }
   .section-title {
     color: $green;
     font-size: rem-calc(16px);
     font-weight: 400;
     font-family: $font-family-base;
+    @include media-breakpoint-down(sm) {
+      font-size: rem-calc(14px);
+    }
     &:before {
       content: '';
       background-color: $green;
       height: 1px;
-      width: 100%;
       position: absolute;
       left: 0;
       right: 0;
       top: 50%;
       transform: translateY(-50%);
+      @include media-breakpoint-down(xl) {
+        left: -30px;
+        right: -30px;
+      }
+      @include media-breakpoint-down(sm) {
+        left: -15px;
+        right: -15px;
+      }
     }
     & > span {
       display: flex;
       background: $gray-200;
       padding: 0 30px;
+      @include media-breakpoint-down(sm) {
+        padding: 0 15px;
+      }
     }
   }
   .section-content {
@@ -340,11 +444,20 @@
     @include media-breakpoint-down(lg) {
       gap: 20px;
     }
+    @include media-breakpoint-down(sm) {
+      gap: 15px;
+    }
     p {
       font-size: rem-calc(30px);
       font-weight: 700;
       font-family: $font-family-serif;
       line-height: 1.33;
+      @include media-breakpoint-down(md) {
+        font-size: rem-calc(20px);
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: rem-calc(16px);
+      }
     }
   }
   .services-list {
@@ -352,14 +465,36 @@
     @include media-breakpoint-down(lg) {
       gap: 20px;
     }
+    @include media-breakpoint-down(md) {
+      gap: 15px;
+    }
+    @include media-breakpoint-down(sm) {
+      gap: 10px;
+    }
     li {
       font-size: rem-calc(30px);
       font-weight: 700;
       font-family: $font-family-serif;
       gap: 20px;
+      @include media-breakpoint-down(md) {
+        gap: 15px;
+        font-size: rem-calc(20px);
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: rem-calc(18px);
+        gap: 10px;
+      }
       svg {
         width: 34px;
         height: 34px;
+        @include media-breakpoint-down(md) {
+          width: 28px;
+          height: 28px;
+        }
+        @include media-breakpoint-down(sm) {
+          width: 22px;
+          height: 22px;
+        }
         path {
           fill: $primary;
         }
@@ -372,6 +507,9 @@
   padding: 60px 0;
   background: $gray-900 url('../images/about-us-bg.webp') no-repeat center center;
   background-size: cover;
+  @include media-breakpoint-down(sm) {
+    padding: 40px 0;
+  }
   .section-content {
     gap: 30px;
     color: $white;
@@ -380,16 +518,25 @@
       font-weight: 400;
       font-family: $font-family-base;
       color: $primary;
+      @include media-breakpoint-down(sm) {
+        font-size: rem-calc(14px);
+      }
     }
     p {
       font-size: rem-calc(18px);
       line-height: 1.33;
       font-weight: 300;
+      @include media-breakpoint-down(sm) {
+        font-size: rem-calc(16px);
+      }
       &.lead {
         font-size: rem-calc(30px);
         line-height: 1.13;
         font-family: $font-family-serif;
         font-weight: 700;
+        @include media-breakpoint-down(sm) {
+          font-size: rem-calc(21px);
+        }
       }
     }
   }
@@ -397,6 +544,10 @@
 
 .contact-section {
   padding: 60px 0;
+  @include media-breakpoint-down(sm) {
+    padding: 60px 0 0;
+    background-color: $gray-900;
+  }
   &:after {
     content: '';
     width: 100%;
@@ -408,7 +559,33 @@
     right: 0;
     bottom: 0;
     z-index: -1;
+    @include media-breakpoint-down(sm) {
+      content: none;
+    }
   }
+  .section-content {
+    @include media-breakpoint-down(md) {
+      order: 1;
+    }
+    & + .col-md-6 {
+      position: relative;
+      @include media-breakpoint-down(sm) {
+        &:after {
+          content: '';
+          background: $white url("../images/contact-bg.webp") no-repeat top right -100px;
+          background-size: cover;
+          position: absolute;
+          left: -15px;
+          right: -15px;
+          bottom: -55px;
+          top: -59px;
+          z-index: 0;
+          opacity: .4;
+        }
+      }
+    }
+  }
+  
   .section-title {
     color: $gray-900;
     font-size: rem-calc(50px);
@@ -423,10 +600,19 @@
     @include media-breakpoint-down(lg) {
       font-size: rem-calc(32px);
     }
+    @include media-breakpoint-down(sm) {
+      font-size: rem-calc(24px);
+      color: $gray-100;
+      position: relative;
+      z-index: 1;
+    }
     .section-subtitle {
       font-family: $font-family-serif;
       font-weight: 700;
       letter-spacing: normal;
+      @include media-breakpoint-down(sm) {
+        font-size: rem-calc(21px);
+      }
     }
   }
 }
@@ -440,6 +626,16 @@
     padding-top: 30px;
     padding-bottom: 30px;
     gap: 20px;
+  }
+  @include media-breakpoint-down(sm) {
+    margin: 0 -15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .row {
+    @include media-breakpoint-down(sm) {
+      gap: 20px;
+    }
   }
   .btn-group {
     gap: 3px;
@@ -465,6 +661,9 @@
       padding: 9.5px;
       @include media-breakpoint-down(xl) {
         flex-basis: auto;
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: rem-calc(16px);
       }
       &:hover {
         background: rgba(255, 255, 255, 0.3);
@@ -537,6 +736,9 @@
       font-weight: 300;
       color: rgba(248, 247, 243, 0.6);
       line-height: 1.33;
+      @include media-breakpoint-down(sm) {
+        font-size: rem-calc(12px);
+      }
     }
   }
 }
