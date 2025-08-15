@@ -1,7 +1,7 @@
 <section class="projects-section">
   <div class="container-xl d-flex flex-column">
     <h2 class="section-title d-flex flex-column align-items-center text-center mb-0">
-      <span class="section-subtitle" data-aos="fade-up">View new our past work</span>
+      <span class="section-subtitle" data-aos="fade-up">View our past work</span>
       <span data-aos="fade-up" data-aos-delay="300">Projects</span>
     </h2>
     <div class="project-list row">

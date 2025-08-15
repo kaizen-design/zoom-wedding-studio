@@ -64,7 +64,7 @@ body.off-canvas-open {
     &:hover {
       svg {
         path {
-          fill: $green;
+          fill: $primary;
         }
       }
     }
@@ -107,7 +107,7 @@ body.off-canvas-open {
   }
   .close-icon:hover:before,
   .close-icon:hover:after {
-    background-color: $gray-900;
+    background-color: $primary;
   }
 
   .mobile-menu {
