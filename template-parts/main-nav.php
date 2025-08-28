@@ -1,4 +1,4 @@
-<nav class="header-nav position-absolute top-0 start-0 end-0">
+<nav class="header-nav <?= is_front_page() ? 'position-absolute top-0 start-0 end-0' : 'static' ?>">
   <div class="container-xl position-relative">
     <div class="row align-items-center">
       <div class="col d-none d-lg-block" data-aos="fade-right">

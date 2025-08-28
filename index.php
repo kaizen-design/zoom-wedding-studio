@@ -2,10 +2,10 @@
 
 get_header();
 
-if(is_archive()){
+/* if(is_archive()){
     header("Location: ". get_bloginfo('url'));
     exit();
-}
+} */
 ?>
 
     <main class="container-main">

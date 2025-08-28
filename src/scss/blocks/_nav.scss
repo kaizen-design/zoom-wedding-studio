@@ -1,6 +1,52 @@
 .header-nav {
   padding: 20px 0;
   z-index: 99;
+  &.position-absolute {
+    .logo {
+      svg {
+        path {
+          fill: $gray-100;
+        }
+      }
+      &:hover {
+        svg {
+          path {
+            fill: $primary;
+          }
+        }
+      }
+    }
+    hr {
+      background-color: $gray-200;
+    }
+    .nav-contact-list {
+      li {
+        a {
+          color: $gray-200;
+          &:hover, &:focus-visible {
+            color: $primary;
+            svg {
+              path, circle {
+                fill: $primary;
+              }
+            }
+          }
+          svg {
+            path, circle {
+              fill: $gray-200;
+            }
+          }
+        }
+      }
+    }
+    .top-nav-menu {
+      li {
+        a {
+          color: $gray-100;
+        }
+      }
+    }
+  }
   .logo {
     svg {
       @include media-breakpoint-down(sm) {
@@ -8,6 +54,7 @@
         height: auto;
       }
       path {
+        fill: $gray-900;
         transition: $transition-base;
       }
     }
@@ -20,7 +67,7 @@
     }
   }
   hr {
-    background-color: $gray-200;
+    background-color: $primary;
     opacity: 1;
     margin: 10px 0;
   }
@@ -39,7 +86,7 @@
     text-transform: uppercase;
     font-weight: 300;
     a {
-      color: $gray-200;
+      color: rgba(74, 99, 96, 0.6);
       text-decoration: none;
       transition: $transition-base;
       &:hover, &:focus-visible {
@@ -55,7 +102,7 @@
         height: 18px;
         path, circle {
           transition: $transition-base;
-          fill: $gray-200;
+          fill: rgba(74, 99, 96, 0.6);
         }
       }
     }
@@ -72,17 +119,15 @@
       font-size: rem-calc(14px);
     }
     a {
-      color: $gray-100;
+      color: $gray-600;
       text-decoration: none;
       transition: $transition-base;
       border-bottom: 1px solid transparent;
       &:hover, &:focus-visible {
         color: $primary;
-        //border-color: $primary;
       }
       &.active {
         color: $primary;
-        border-color: $primary;
       }
     }
   }
