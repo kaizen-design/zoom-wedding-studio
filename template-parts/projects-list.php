@@ -6,8 +6,8 @@
     </div>
     <div class="project-list row">
       <?php $delay = 0; ?>
-      <?php foreach(range(1, 20) as $_project): ?>
-        <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="<?= $delay ?>">
+      <?php foreach(range(1, 24) as $_project): ?>
+        <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="<?= $delay ?>">
           <a href="#" class="project-card card text-white">
             <img 
               src="<?= get_template_directory_uri() ?>/assets/tmp/project-1.webp" 
@@ -26,7 +26,7 @@
             </div>
           </a>
         </div>
-        <?php $delay = $_project % 4 === 0 ? 0 : $delay + 300; ?>
+        <?php $delay = $_project % 4 === 0 ? 0 : $delay + 150; ?>
       <?php endforeach; ?>
     </div>
     <a href="#" class="btn btn-primary btn-lg d-flex align-items-center align-self-center" data-aos="fade-right" data-aos-anchor-placement="top-bottom">

@@ -1,29 +1,30 @@
 <section class="projects-about-us-section">
   <div class="container-xl">
     <div class="row justify-content-between">
-      <div class="section-content d-flex flex-column col-lg-4">
+      <div class="section-content d-flex flex-column col-sm-6 col-md-5 col-xl-4">
         <h2 class="section-title mb-0 d-flex flex-column">
           <small class="text-uppercase" data-aos="fade-right">Guaranteed Quality</small>
           <span data-aos="fade-right" data-aos-delay="150" data-aos-anchor-placement="top-bottom">We believe that every wedding is unique and deserves an individual artistic approach</span>
         </h2>
         <p class="mt-auto" data-aos="fade-right" data-aos-anchor-placement="top-bottom">Making photos and videos is not our job. It’s an integral part of our lives. We enjoy the process and put our passion and souls to every wedding...</p>
       </div>
-      <div class="col-lg-6 ps-0">
+      <div class="col-sm-6 ps-md-0">
         <div class="about-us-card position-relative h-100">
-          <div class="card-img overflow-hidden">
+          <div class="card-img overflow-hidden h-100">
             <img 
               src="<?= get_template_directory_uri() ?>/assets/tmp/about-us-card-img.webp" 
-              class="img-fluid w-100"
+              class="img-fluid w-100 h-100"
               width="600"
               height="600"
               loading="lazy" 
               alt="" 
               data-aos="fade-left"
             />
+
           </div>
           <div class="card-caption d-flex justify-content-between align-items-center">
             <h3 class="text-uppercase" data-aos="fade-right" data-aos-anchor-placement="top-bottom">About  top rated,<br />Award-winning service</h3>
-            <ul class="socials-list list-unstyled mb-0 d-flex justify-content-end">
+            <ul class="socials-list list-unstyled mb-0 d-flex justify-content-end d-none d-xl-flex">
               <li data-aos="fade-left" data-aos-anchor-placement="top-bottom">
                 <a href="#">
                   <svg viewBox="0 0 32 32"><title/><g data-name="wa whatsapp message communication chat" id="wa_whatsapp_message_communication_chat"><path d="M16,3A13,13,0,0,0,4.53,22.13L3,27.74a1,1,0,0,0,.27,1A1,1,0,0,0,4,29a.84.84,0,0,0,.27,0l5.91-1.65a1,1,0,0,0-.53-1.93L5.42,26.56l1.15-4.3a1,1,0,0,0-.1-.76A11,11,0,1,1,16,27a11.23,11.23,0,0,1-1.84-.15,1,1,0,0,0-1.15.82,1,1,0,0,0,.82,1.15A13,13,0,1,0,16,3Z"/><path d="M15,11.21l-1.16-1.6a2.06,2.06,0,0,0-1.5-.84,2.08,2.08,0,0,0-1.62.6l-1.2,1.2a2.81,2.81,0,0,0-.8,2.08c0,1.77,1.36,4,4,6.6,3.09,3,5.23,4,6.69,4a2.7,2.7,0,0,0,2-.81l1.2-1.2a2,2,0,0,0-.24-3.11L20.8,17a2.09,2.09,0,0,0-1.83-.3l-1.49.47a.53.53,0,0,1-.26-.09,11.42,11.42,0,0,1-2.35-2.26.31.31,0,0,1,0-.11c.13-.44.35-1.15.5-1.64A2,2,0,0,0,15,11.21Zm1.29,7.63a2.33,2.33,0,0,0,1.75.2l1.54-.46,1.61,1.25L20,21c-.48.47-2.25.33-5.86-3.21-3-2.91-3.41-4.5-3.41-5.18A.89.89,0,0,1,11,12l1.28-1.19,1.18,1.65c-.16.49-.39,1.22-.51,1.65A2.12,2.12,0,0,0,13,15.51,11.24,11.24,0,0,0,16.33,18.84Z"/></g></svg>
@@ -45,7 +46,7 @@
                 </a>
               </li>
             </ul>
-            <a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300" href="#" class="read-more-btn btn btn-primary rounded-0 text-uppercase">Read<br />More</a>
+            <a data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300" href="#" class="read-more-btn btn btn-primary rounded-0 text-uppercase d-none d-xl-flex">Read<br />More</a>
           </div>
         </div>
       </div>

@@ -43,6 +43,22 @@
       li {
         a {
           color: $gray-100;
+          &:hover, &:focus-visible {
+            color: $primary;
+          }
+          &.active {
+            color: $primary;
+          }
+        }
+      }
+    }
+    .hamburger {
+      & > span {
+        background: $gray-200;
+      }
+      &:hover, &:focus-within {
+        & > span {
+          background: $gray-100;
         }
       }
     }
@@ -140,7 +156,7 @@
   &:hover, &:focus-within {
     & > span {
       width: 34px;
-      background: $gray-100;
+      background: $primary;
       &:first-child, &:last-child {
         width: 23px;
       }
@@ -148,7 +164,7 @@
   }
   & > span {
     height: 3px;
-    background: $gray-200;
+    background: $gray-900;
     width: 23px;
     transition: $transition-base;
     &:first-child, &:last-child {

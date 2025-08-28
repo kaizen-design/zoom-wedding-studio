@@ -4,6 +4,22 @@ body.page-template-page-projects {
       object-position: top center;
     }
   }
+  .project-card {
+    .card-meta {
+      @include media-breakpoint-down(sm) {
+          gap: 0;
+          flex-direction: column;
+          align-items: center;
+          & > li {
+            &:not(:last-child) {
+              &:after {
+                content: none;
+              }
+            }
+          }
+      }
+    }
+  } 
 }
 
 .hero-banner {
@@ -30,6 +46,12 @@ body.page-template-page-projects {
     text-transform: uppercase;
     font-size: rem-calc(60px);
     line-height: 1;
+    @include media-breakpoint-down(md) {
+      font-size: rem-calc(40px);
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: rem-calc(30px);
+    }
   }
   .hero-img {
     object-fit: cover;
@@ -56,6 +78,12 @@ body.page-template-page-projects {
       font-size: rem-calc(60px);
       line-height: 1;
       max-width: 670px;
+      @include media-breakpoint-down(lg) {
+        font-size: rem-calc(40px)
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: rem-calc(30px)
+      }
     }
     p {
       color: $gray-600;
@@ -70,6 +98,14 @@ body.page-template-page-projects {
   .project-list {
     margin-bottom: 60px;
     row-gap: 30px;
+    @include media-breakpoint-down(xl) {
+      row-gap: 20px;
+    }
+    @include media-breakpoint-down(sm) {
+      row-gap: 10px;
+      --bs-gutter-x: 0.625rem;
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -108,8 +144,12 @@ body.page-template-page-projects {
     color: $white;
     font-family: $font-family-serif;
     text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
     @include media-breakpoint-down(sm) {
-      font-size: rem-calc(21px);
+      font-size: rem-calc(18px);
     }
   }
   .card-meta {
@@ -118,6 +158,10 @@ body.page-template-page-projects {
       font-size: rem-calc(14px);
       font-weight: 300;
       line-height: 1.66;
+      @include media-breakpoint-down(sm) {
+        font-size: rem-calc(13px);
+        line-height: 1.2;
+      }
       &:not(:last-child) {
         &:after {
           content: ' | '
@@ -138,6 +182,13 @@ body.page-template-page-projects {
     & > img {
       height: auto;
       object-fit: cover;
+      @include media-breakpoint-down(md) {
+        margin: -40px calc(calc(15px + 1.25%) * -1);
+        width: 100vw !important;
+        max-width: none;
+        min-height: 240px;
+        height: calc(100% + 40px)!important;
+      }
     }
     .square {
       background: $green;
@@ -147,22 +198,46 @@ body.page-template-page-projects {
       position: absolute;
       bottom: -210px;
       left: -65px;
+      @include media-breakpoint-down(md) {
+        bottom: -80px;
+        left: -170px;
+        top: 0;
+        height: auto;
+      }
     }
   }
   .section-content {
     gap: 40px;
     z-index: 2;
+    @include media-breakpoint-down(md) {
+      order: -1;
+      text-align: center;
+    }
+    @include media-breakpoint-down(sm) {
+      text-align: left;
+      gap: 30px;
+    }
     .section-title {
       line-height: 1.2;
       color: $gray-900;
       font-size: rem-calc(40px);
       gap: 20px;
+      @include media-breakpoint-down(lg) {
+        font-size: rem-calc(32px);
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: rem-calc(24px);
+        gap: 10px;
+      }
       small {
         font-size: rem-calc(16px);
         line-height: 1;
         color: $primary;
         font-family: $font-family-base;
         font-weight: 400;
+        @include media-breakpoint-down(sm) {
+          font-size: rem-calc(14px);
+        }
       }
     } 
     p {
@@ -183,6 +258,16 @@ body.page-template-page-projects {
 
 .project-services-list {
   gap: 30px;
+  @include media-breakpoint-down(lg) {
+    gap: 20px;
+  }
+  @include media-breakpoint-down(md) {
+    width: 100%;
+    flex-direction: column;
+  }
+  @include media-breakpoint-down(sm) {
+    gap: 15px;
+  }
   .list-item {
     background: $white;
     padding: 30px 25px;
@@ -190,6 +275,14 @@ body.page-template-page-projects {
     gap: 10px;
     width: 220px;
     transition: $transition-base;
+    @include media-breakpoint-down(md) {
+      width: auto;
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+    @include media-breakpoint-down(sm) {
+      gap: 20px;
+    }
     &:hover, &:focus-visible {
       background: $green;
       h3 {
@@ -204,6 +297,13 @@ body.page-template-page-projects {
       width: 90px;
       height: 90px;
       margin-bottom: 10px;
+      flex-shrink: 0;
+    }
+    .item-meta {
+      gap: 10px;
+      @include media-breakpoint-down(sm) {
+        text-align: left;
+      }
     }
     h3 {
       margin: 0;
@@ -228,23 +328,45 @@ body.page-template-page-projects {
   padding: 60px 0;
   overflow: hidden;
   @include media-breakpoint-down(sm) {
-    padding: 40px 0;
+    padding: 40px 0 0;
+  }
+  .row {
+    @include media-breakpoint-down(sm) {
+      gap: 40px;
+    }
   }
   .section-content {
     gap: 30px;
     padding-top: 150px;
+    @include media-breakpoint-down(md) {
+      padding-top: 20px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-top: 40px;
+      gap: 20px;
+    }
   }
   .section-title {
     line-height: 1.2;
     color: $gray-900;
     font-size: rem-calc(40px);
     gap: 20px;
+    @include media-breakpoint-down(lg) {
+      font-size: rem-calc(32px);
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: rem-calc(24px);
+      gap: 10px;
+    }
     small {
       font-size: rem-calc(16px);
       line-height: 1;
       color: $primary;
       font-family: $font-family-base;
       font-weight: 400;
+      @include media-breakpoint-down(sm) {
+        font-size: rem-calc(14px);
+      }
     }
   } 
   p {
@@ -260,6 +382,9 @@ body.page-template-page-projects {
 }
 
 .about-us-card {
+  @include media-breakpoint-down(sm) {
+    margin: 0 -15px;
+  }
   &:hover {
     .card-img {
       & > img {
@@ -270,6 +395,7 @@ body.page-template-page-projects {
   .card-img {
     & > img {
       transition: $transition-base;   
+      object-fit: cover;
     }
   }
   .card-caption {
@@ -282,6 +408,10 @@ body.page-template-page-projects {
     background: rgba(33, 33, 33, 0.2);
     backdrop-filter: blur(5px);
     height: 95px;
+    @include media-breakpoint-down(md) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
     h3 {
       margin: 0;
       font-size: rem-calc(16px);
@@ -293,6 +423,10 @@ body.page-template-page-projects {
       border-right: 1px solid rgba(255, 255, 255, 0.3);
       flex-grow: 1;
       flex-basis: 0;
+      @include media-breakpoint-down(xl) {
+        border-right: none;
+        padding-right: 0;
+      }
     }
     .socials-list {
       flex-grow: 1;
