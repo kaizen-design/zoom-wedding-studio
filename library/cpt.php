@@ -1,7 +1,7 @@
 <?php
 
 // -------- custom post type example ---------
-//add_action( 'init', 'projects_cpt' );
+add_action( 'init', 'projects_cpt' );
 function projects_cpt() {
   $labels = array(
     'name'                 => _x('Projects', 'post type general name', 'zoomwedding'),
@@ -30,10 +30,10 @@ function projects_cpt() {
     'query_var'                => true,
     'capability_type'          => 'post',
     'map_meta_cap'              => true,
-    'has_archive'              => true,
+    'has_archive'              => false,
     'hierarchical'           => false,
     'menu_position'            => null,
-    'rewrite' => array('slug' => 'projects', 'with_front' => false),
+    //'rewrite' => array('slug' => 'projects', 'with_front' => false),
     'supports'               => array('title', 'thumbnail', 'editor'),
     'menu_icon'                 => 'dashicons-portfolio',
   );

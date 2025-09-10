@@ -1,6 +1,6 @@
 <section class="contact-section position-relative">
   <div class="container-xl">
-     <div class="row justify-content-between gy-4">
+     <div class="row justify-content-between align-items-center gy-4">
         <div class="section-content col-md-6" data-aos="fade-right">
           <form class="contact-form d-flex flex-column">
             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
@@ -35,11 +35,12 @@
             </div>
           </form>
         </div>
-        <div class="col-md-6">
-          <h2 class="section-title mb-0 mt-4 d-flex flex-column">
-            <span class="section-subtitle" data-aos="fade-left">Let's talk about</span>
-            <span class="text-uppercase" data-aos="fade-left" data-aos-delay="300">photographing and videotaping your wedding</span>
+        <div class="col-md-6 d-flex flex-column">
+          <h2 class="section-title mb-0 d-flex flex-column">
+            <span class="section-subtitle" data-aos="fade-left">Let's make</span>
+            <span class="text-uppercase" data-aos="fade-left" data-aos-delay="150">your dream a reality together</span>
           </h2>
+          <p data-aos="fade-left" data-aos-delay="300" data-aos-anchor-placement="top-bottom">Contact us and we'll start planning your perfect wedding shoot.</p>
         </div>
      </div>
   </div>
