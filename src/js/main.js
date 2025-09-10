@@ -3,11 +3,43 @@ window.onload = () => {
   initMasonry();
   initPortfolioSlider();
   initOffCanvasNav();
+  initProjectSlider();
   AOS.init();
   //initTabs();
   //initAccordion();
   //initSmoothScroll();
 };
+
+function initProjectSlider() {
+  const $slider = document.querySelector('.project-hero-slider .swiper');
+  if (!$slider) return;
+  const swiper = new Swiper($slider, {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+    loop: true,
+    navigation: {
+      nextEl: '.project-hero-slider .slide-next',
+      prevEl: '.project-hero-slider .slide-prev',
+    },
+    pagination: {
+      type: 'fraction',
+      el: '.single-project-hero .slides-counter',
+      renderFraction: function (currentClass, totalClass) {
+      return '<span class="' + currentClass + '"></span>' +
+              ' / ' +
+              '<span class="' + totalClass + '"></span>';
+      },
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      /* 576: {
+        slidesPerView: 'auto',
+        freeMode: true,
+      }, */
+    }
+  });
+}
 
 function initMasonry() {
   const $grid = document.querySelector('.masonry-grid');
