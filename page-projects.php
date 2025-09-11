@@ -12,7 +12,7 @@ get_header(); ?>
   <?php get_template_part( 'template-parts/projects', 'list' ); ?>
   <?php get_template_part( 'template-parts/projects', 'services' ); ?>
   <?php get_template_part( 'template-parts/projects', 'about-us' ); ?>
-  <?php get_template_part( 'template-parts/projects', 'contact' ); ?>
+  <?php get_template_part( 'template-parts/section', 'contact' ); ?>
   <?php get_template_part( 'template-parts/section', 'instagram' ); ?>
 </main>
 
