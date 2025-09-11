@@ -1,8 +1,8 @@
 <section class="project-package-section">
   <div class="container-xl">
-    <div class="row justify-content-center">
-      <div class="col-xl-6">
-        <div class="package-img" data-aos="fade-right">
+    <div class="row justify-content-center align-items-start">
+      <div class="section-image col-xl-6 position-relative" data-aos="fade-right">
+        <div class="package-img">
           <img 
             src="<?= get_template_directory_uri() ?>/assets/tmp/package-image.webp" 
             alt="Stephanie & Eric" 

@@ -8,7 +8,7 @@
         </h2>
         <p class="mb-0" data-aos="fade-left" data-aos-delay="300">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </div>
-      <div class="image-section col-xl-7">
+      <div class="image-section col-xl-7 position-relative">
         <div class="row align-items-end gx-6">
           <div class="col-lg-6">
             <div class="section-img" data-aos="fade-up" data-aos-delay="300">
