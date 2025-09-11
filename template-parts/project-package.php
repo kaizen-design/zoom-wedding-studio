@@ -1,7 +1,7 @@
-<section class="project-package-section">
+<section class="project-package-section position-relative">
   <div class="container-xl">
     <div class="row justify-content-center align-items-start">
-      <div class="section-image col-xl-6 position-relative" data-aos="fade-right">
+      <div class="section-image d-none d-md-flex col-md-6 position-relative" data-aos="fade-right">
         <div class="package-img">
           <img 
             src="<?= get_template_directory_uri() ?>/assets/tmp/package-image.webp" 
@@ -13,7 +13,7 @@
           />
         </div>  
       </div>
-      <div class="section-content col-xl-4 d-flex flex-column">
+      <div class="section-content col-md-6 col-xl-4 d-flex flex-column">
         <h2 class="section-title text-uppercase mb-0 d-flex flex-column">
           <span class="section-subtitle" data-aos="fade-left">Package Description</span>  
           <span data-aos="fade-left" data-aos-delay="150">Photo + Video: Brilliant</span>

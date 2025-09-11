@@ -1,6 +1,6 @@
 <header class="single-project-hero position-relative z-1 has-overlay">
   <div class="project-hero-slider position-relative">
-    <div class="swiper">
+    <div class="swiper h-100">
       <div class="swiper-wrapper d-flex">
         <div class="swiper-slide">
           <img 
@@ -55,12 +55,12 @@
       </a>
     </div>
   </div>
-  <div class="container">
+  <div class="container-xl">
     <div class="project-details">
       <div class="row align-items-stretch">
-        <div class="col-xl-2 d-flex flex-column pe-0 justify-content-center" data-aos="fade-right">
+        <div class="col-sm-2 d-none d-sm-flex flex-column pe-xl-0 justify-content-center" data-aos="fade-right">
           <p class="details-subtitle mb-0 text-uppercase">Share</p>
-          <ul class="share-list list-unstyled mb-0 d-flex">
+          <ul class="share-list list-unstyled mb-0 d-flex flex-wrap">
             <li>
               <a href="#">
                 <svg viewBox="0 0 32 32"><title></title><g data-name="facebook fb face book" id="facebook_fb_face_book"><path d="M24,3H8A5,5,0,0,0,3,8V24a5,5,0,0,0,5,5h8a1,1,0,0,0,1-1V20a1,1,0,0,0-1-1H15V17h1a1,1,0,0,0,1-1V12.5A2.5,2.5,0,0,1,19.5,10H22v2H21a2,2,0,0,0-2,2v2a1,1,0,0,0,1,1h1.72l-.5,2H20a1,1,0,0,0-1,1v4a1,1,0,0,0,2,0V21h1a1,1,0,0,0,1-.76l1-4a1,1,0,0,0-.18-.86A1,1,0,0,0,23,15H21V14h2a1,1,0,0,0,1-1V9a1,1,0,0,0-1-1H19.5A4.51,4.51,0,0,0,15,12.5V15H14a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1h1v6H8a3,3,0,0,1-3-3V8A3,3,0,0,1,8,5H24a3,3,0,0,1,3,3V24a3,3,0,0,1-3,3H20a1,1,0,0,0,0,2h4a5,5,0,0,0,5-5V8A5,5,0,0,0,24,3Z"></path></g></svg>
@@ -83,11 +83,11 @@
             </li>
           </ul>
         </div>
-        <div class="col-xl-8 d-flex flex-column align-items-center text-center justify-content-center">
+        <div class="col-sm-8 d-flex flex-column align-items-center text-center justify-content-center">
           <h1 class="project-title mb-0 text-uppercase" data-aos="fade-up">Stephanie & Eric</h1>  
           <p class="details-subtitle mb-0 text-uppercase" data-aos="fade-up" data-aos-delay="150">Couples, wedding</p>
         </div>
-        <div class="col-xl-2 d-flex flex-column align-items-end ps-0 justify-content-center" data-aos="fade-left">
+        <div class="col-sm-2 d-none d-sm-flex flex-column align-items-end ps-xl-0 justify-content-center" data-aos="fade-left">
           <p class="details-subtitle mb-0 text-uppercase">Photo</p>
           <span class="slides-counter">01 / <span class="total">15</span></span>
         </div>
