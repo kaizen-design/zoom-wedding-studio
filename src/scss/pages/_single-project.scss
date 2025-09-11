@@ -159,6 +159,14 @@ body.single-projects {
   .package-img {
     border-radius: 16px;
     overflow: hidden; 
+    &:hover {
+      & > img {
+        transform: scale(1.05);
+      }
+    }
+    & > img {
+      transition: $transition-base;
+    }
   }
   .section-content {
     gap: 30px;
@@ -199,6 +207,58 @@ body.single-projects {
       path {
         fill: $primary;
       }
+    }
+  }
+}
+
+.project-reels-section {
+  padding: 30px 0 60px;
+  @include media-breakpoint-down(sm) {
+    padding: 20px 0 40px;
+  }
+  .section-content {
+    gap: 30px;
+    padding-top: 180px;
+    p {
+      margin: 0;
+      font-size: rem-calc(18px);
+      line-height: 1.33;
+      color: $gray-600;
+      font-weight: 300;
+    }
+  }
+  .section-title {
+    font-size: rem-calc(40px);
+    line-height: 1.2;
+    color: $gray-900;
+    gap: 15px;
+    font-weight: 700;
+    .section-subtitle {
+      font-size: rem-calc(16px);
+      font-weight: 400;
+      line-height: 1;
+      color: $primary;
+      font-family: $font-family-base;
+    }
+  }
+  .image-section {
+    .col-lg-6 {
+      gap: 30px;
+    }
+    .btn {
+      height: 95px;
+    }
+  }
+  .section-img {
+    border-radius: 16px;
+    overflow: hidden; 
+    &:hover {
+      & > img {
+        transform: scale(1.05);
+      }
+    }
+    & > img {
+      transition: $transition-base;
     }
   }
 }
