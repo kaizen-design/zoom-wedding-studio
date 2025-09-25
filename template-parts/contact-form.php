@@ -1,7 +1,7 @@
 <section class="contact-form-section">
   <div class="container-xl">
     <div class="row">
-      <div class="col-lg-6" data-aos="fade-right">
+      <div class="d-none d-md-flex col-md-6" data-aos="fade-right">
         <img 
           src="<?= get_template_directory_uri() ?>/assets/tmp/contact-img.webp" 
           alt="Let's make your dream a reality together" 
@@ -11,7 +11,7 @@
           loading="lazy"
         />
       </div>
-      <div class="section-content col-lg-6 d-flex flex-column">
+      <div class="section-content col-md-6 d-flex flex-column">
         <h2 class="section-title mb-0 text-center" data-aos="fade-left">Let's make your dream a reality together</h2>
         <p class="mb-0 text-center" data-aos="fade-left" data-aos-delay="150">We’d love to hear from you. Check our availability and get a free, personalized quote from a top quality team of professionals. Gain inspiration from our portfolios. Promotional pricing and discounts are subject to discuss with our Manager.</p>
         <form class="contact-form d-flex flex-column" data-aos="fade-left" data-aos-delay="300">
@@ -41,7 +41,7 @@
             </div>
           </div>
           <textarea class="form-control" name="message" rows="4" placeholder="Your message" autocomplete="off"></textarea>
-          <div class="form-footer d-flex flex-column flex-lg-row align-items-center">
+          <div class="form-footer d-flex flex-column flex-sm-row align-items-center">
             <button type="submit" class="btn btn-primary btn-lg">Send</button>
             <small>By clicking on the “Send” button you confirm your consent to the processing of personal data.</small>
           </div>
