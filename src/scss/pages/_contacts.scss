@@ -27,7 +27,13 @@
     padding: 0;
     gap: 10px;
   }
-  svg {
+  &:hover {
+    & > svg {
+      transform: scale(1.15);
+    }
+  }
+  & > svg {
+    transition: $transition-base;
     path {
       fill: $brown;
     }
