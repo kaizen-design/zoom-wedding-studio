@@ -24,6 +24,10 @@ body.page-template-page-projects {
 
 .hero-banner {
   min-height: 370px;
+  overflow: hidden;
+  @include media-breakpoint-down(sm) {
+    min-height: auto;
+  }
   &.has-overlay {
     &:before {
       content: '';
