@@ -1,0 +1,124 @@
+.contact-details-section {
+  padding: 40px 0;
+  background: $gray-200;
+  .col-lg-4 {
+    &:nth-child(2) {
+      .contact-card {
+        border-right: 1px solid $brown;
+        border-left: 1px solid $brown;
+      }
+    }
+  }
+}
+
+.contact-card {
+  gap: 20px;
+  padding: 20px;
+  svg {
+    path {
+      fill: $brown;
+    }
+  }
+  h3 {
+    font-size: rem-calc(30px);
+    line-height: 1.26;
+    font-weight: 700;
+    color: $gray-900;
+    margin: 0;
+  }
+  p {
+    font-size: rem-calc(18px);
+    line-height: 1.66;
+    font-weight: 300;
+    color: $gray-600;
+    margin: 0;
+  }
+}
+
+.contact-links-list {
+  li {
+    font-size: rem-calc(18px);
+    line-height: 1.66;
+    font-weight: 300;
+    a {
+      color: $gray-600;
+      transition: $transition-base;
+      white-space: nowrap; 
+      overflow: hidden; 
+      text-overflow: ellipsis;
+      &:hover, &:focus-visible {
+        color: $brown;
+      }
+    }
+  }
+}
+
+.contact-form-section {
+  padding: 60px 0;
+  @include media-breakpoint-down(sm) {
+    padding: 40px 0;
+  }
+  .section-img {
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    object-fit: cover;
+    max-height: 765px;
+  }
+  .section-content {
+    gap: 30px;
+    h2 {
+      color: $gray-900;
+      font-size: rem-calc(60px);
+      line-height: 1;
+      @include media-breakpoint-down(lg) {
+        font-size: rem-calc(40px)
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: rem-calc(30px)
+      }
+    }
+    p {
+      color: $gray-600;
+      font-size: rem-calc(18px);
+      font-weight: 300;
+      line-height: 1.33;
+      @include media-breakpoint-down(sm) {
+        font-size: rem-calc(16px)
+      }
+    }
+  }
+  .contact-form {
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    .btn-group {
+      .btn-check:checked {
+        & + .btn {
+          background: $green;
+        }
+      }
+      & > .btn {
+        color: $gray-900;
+        background: rgba(74, 99, 96, 0.1);
+        &:hover {
+          background: rgba(74, 99, 96, 0.3);
+        }
+      }
+    }
+    .form-control {
+      color: $gray-900;
+      border-bottom: 1px solid rgba(98, 98, 98, 0.3);
+      &::placeholder {
+        color: $gray-600;
+      }
+      &:focus {
+        border-color: $green;
+      }
+    }
+    .form-footer {
+      small {
+        color: rgba(98, 98, 98, 0.6)
+      }
+    }
+  }
+}
