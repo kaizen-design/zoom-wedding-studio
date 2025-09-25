@@ -1,9 +1,12 @@
 .contact-details-section {
   padding: 40px 0;
   background: $gray-200;
+  @include media-breakpoint-down(sm) {
+
+  }
   .row {
     @include media-breakpoint-down(sm) {
-      gap: 40px;
+      gap: 20px;
     }
   }
   .col-sm-4 {
@@ -25,7 +28,12 @@
   height: 100%;
   @include media-breakpoint-down(md) {
     padding: 0;
-    gap: 10px;
+  }
+  & > div {
+    gap: 20px;
+    @include media-breakpoint-down(md) {
+      gap: 10px;
+    }
   }
   &:hover {
     & > svg {
@@ -34,6 +42,10 @@
   }
   & > svg {
     transition: $transition-base;
+    flex-shrink: 0;
+    @include media-breakpoint-down(sm) {
+      width: 30px;
+    }
     path {
       fill: $brown;
     }
