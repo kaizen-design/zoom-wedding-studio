@@ -58,7 +58,7 @@
       <div class="tab-content">
         <div class="tab-pane fade show active" id="pricing-photo-video-tab" role="tabpanel" aria-labelledby="pricing-photo-video">
           <div class="row justify-content-center">
-            <div class="col-sm-6 col-xl-3" data-aos="fade-up">
+            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               <div class="pricing-plan-card d-flex flex-column align-items-center text-center h-100">
                 <h3 class="plan-title mb-0 d-flex flex-column align-items-center text-uppercase w-100">
                   <svg width="59" height="50" viewBox="0 0 59 50">
@@ -92,7 +92,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
               <div class="pricing-plan-card d-flex flex-column align-items-center text-center h-100">
                 <h3 class="plan-title mb-0 d-flex flex-column align-items-center text-uppercase w-100">
                   <svg width="59" height="50" viewBox="0 0 59 50">
@@ -127,7 +127,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-delay="600">
+            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="600">
               <div class="pricing-plan-card d-flex flex-column align-items-center text-center h-100">
                 <h3 class="plan-title mb-0 d-flex flex-column align-items-center text-uppercase w-100">
                   <svg width="59" height="50" viewBox="0 0 59 50">
@@ -164,7 +164,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-delay="900">
+            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="900">
               <div class="pricing-plan-card d-flex flex-column align-items-center text-center h-100">
                 <h3 class="plan-title mb-0 d-flex flex-column align-items-center text-uppercase w-100">
                   <svg width="59" height="50" viewBox="0 0 59 50">
@@ -206,7 +206,7 @@
         </div>
         <div class="tab-pane fade" id="pricing-photo-tab" role="tabpanel" aria-labelledby="pricing-photo">
           <div class="row justify-content-center">
-            <div class="col-sm-6 col-xl-3" data-aos="fade-up">
+            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               <div class="pricing-plan-card d-flex flex-column align-items-center text-center h-100">
                 <h3 class="plan-title mb-0 d-flex flex-column align-items-center text-uppercase w-100">
                   <svg width="59" height="50" viewBox="0 0 59 50">
@@ -240,7 +240,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
               <div class="pricing-plan-card d-flex flex-column align-items-center text-center h-100">
                 <h3 class="plan-title mb-0 d-flex flex-column align-items-center text-uppercase w-100">
                   <svg width="59" height="50" viewBox="0 0 59 50">
@@ -275,7 +275,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-delay="600">
+            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="600">
               <div class="pricing-plan-card d-flex flex-column align-items-center text-center h-100">
                 <h3 class="plan-title mb-0 d-flex flex-column align-items-center text-uppercase w-100">
                   <svg width="59" height="50" viewBox="0 0 59 50">
@@ -312,7 +312,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-delay="900">
+            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="900">
               <div class="pricing-plan-card d-flex flex-column align-items-center text-center h-100">
                 <h3 class="plan-title mb-0 d-flex flex-column align-items-center text-uppercase w-100">
                   <svg width="59" height="50" viewBox="0 0 59 50">
@@ -354,7 +354,7 @@
         </div>
         <div class="tab-pane fade" id="pricing-video-tab" role="tabpanel" aria-labelledby="pricing-video">
           <div class="row justify-content-center">
-            <div class="col-sm-6 col-xl-3" data-aos="fade-up">
+            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
               <div class="pricing-plan-card d-flex flex-column align-items-center text-center h-100">
                 <h3 class="plan-title mb-0 d-flex flex-column align-items-center text-uppercase w-100">
                   <svg width="59" height="50" viewBox="0 0 59 50">
@@ -388,7 +388,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
               <div class="pricing-plan-card d-flex flex-column align-items-center text-center h-100">
                 <h3 class="plan-title mb-0 d-flex flex-column align-items-center text-uppercase w-100">
                   <svg width="59" height="50" viewBox="0 0 59 50">
@@ -423,7 +423,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-delay="600">
+            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="600">
               <div class="pricing-plan-card d-flex flex-column align-items-center text-center h-100">
                 <h3 class="plan-title mb-0 d-flex flex-column align-items-center text-uppercase w-100">
                   <svg width="59" height="50" viewBox="0 0 59 50">
@@ -460,7 +460,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-delay="900">
+            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="900">
               <div class="pricing-plan-card d-flex flex-column align-items-center text-center h-100">
                 <h3 class="plan-title mb-0 d-flex flex-column align-items-center text-uppercase w-100">
                   <svg width="59" height="50" viewBox="0 0 59 50">

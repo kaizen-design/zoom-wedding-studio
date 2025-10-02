@@ -123,6 +123,9 @@
     }
     &:not(.show) {
       height: 0;
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
     }
   }
 }
