@@ -20,6 +20,7 @@ if (! function_exists('zwickywed_scripts')) :
     wp_enqueue_script('masonry-js', get_template_directory_uri() . '/assets/js/masonry.pkgd.min.js', [], '4.2.2', true);
     wp_enqueue_script('fslightbox-js', get_template_directory_uri() . '/assets/js/fslightbox.js', [], '3.7.4', true);
     wp_enqueue_script('aos-js', 'https://unpkg.com/aos@2.3.1/dist/aos.js', [], '2.3.1', true);
+    wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js', [], '5.0.2', true);
     wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', [], '11.2.10', true);
     wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main-min.js', [], date("ndY_h:i:s", filemtime(get_template_directory() . '/assets/js/main-min.js')), true);
     wp_localize_script('main-js', 'starter_data', [
