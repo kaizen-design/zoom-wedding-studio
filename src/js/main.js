@@ -5,6 +5,7 @@ window.onload = () => {
   initOffCanvasNav();
   initProjectSlider();
   AOS.init();
+  initPricingTabs();
   //initTabs();
   //initAccordion();
   //initSmoothScroll();
@@ -89,24 +90,25 @@ function initOffCanvasNav() {
   }  
 }
 
-function initTabs() {
-  const $tabLinks = document.querySelectorAll('.tab-link');
-  const $tabContents = document.querySelectorAll('.tab-content');
+function initPricingTabs() {
+  const $tabLinks = document.querySelectorAll('.pricing-tabs-section input[name="pricing"]');
+  const $tabContents = document.querySelectorAll('.pricing-tabs-section .tab-pane');
 
   if (!$tabLinks && !$tabContents) return;
   
   $tabLinks.forEach(link => {
-    ['click', 'mouseover'].forEach(evt => 
-      link.addEventListener(evt, function () {
-        if (this.classList.contains('active')) return;  
-        
-        $tabLinks.forEach(tab => tab.classList.remove('active'));
-        $tabContents.forEach(content => content.classList.remove('active'));
-        
-        link.classList.add('active');
-        document.getElementById(link.getAttribute('data-tab')).classList.add('active');
-      }, false)
-    );
+    link.addEventListener('change', function (e) {
+      $tabContents.forEach(content => {
+        content.classList.remove('active')
+        content.classList.remove('show');
+        //content.querySelectorAll('.aos-animate').forEach(i => i.classList.remove('aos-animate'));
+      });
+      const $tab = document.getElementById(`${e.target.id}-tab`);
+      $tab.classList.add('active');
+      $tab.classList.add('show');
+      //$tab.querySelectorAll('.aos-init').forEach(i => i.classList.add('aos-animate'));
+      AOS.refresh();
+    }, false)
   });
 }
 
