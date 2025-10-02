@@ -1,5 +1,5 @@
 <section class="pricing-addons-section">
-  <div class="container-xl">
+  <div class="container-xl position-relative">
     <div class="row align-items-stretch">
       <div class="col-md-8 col-lg-6 col-xl-5">
         <div class="addons-card d-flex flex-column h-100" data-aos="fade-right">
@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="col-md-4 col-lg-3 col-xl-4 image-column d-none d-md-flex flex-column" data-aos="fade-left">
-        <div class="zoom-image-card overflow-hidden" >
+        <div class="zoom-image-card overflow-hidden">
           <img 
             src="<?= get_template_directory_uri() ?>/assets/tmp/addons/addon-1.webp" 
             class="card-img img-fluid w-100 h-100"

@@ -1,5 +1,5 @@
 <section class="pricing-plans-section">
-  <div class="container-xl d-flex flex-column">
+  <div class="container-xl d-flex flex-column position-relative">
     <div class="section-header row gx-6">
       <div class="col-lg-6 col-xl-5 text-center text-lg-end">
         <h2 class="section-title mb-0 text-uppercase" data-aos="fade-right">Investment</h2>

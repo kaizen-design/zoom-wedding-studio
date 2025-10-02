@@ -5,6 +5,18 @@
   }
   & > .container-xl {
     gap: 60px;
+    @include media-breakpoint-up(xl) {
+      &:before {
+        content: '';
+        width: 565px;
+        height: 360px;
+        background: $green;
+        position: absolute;
+        z-index: -1;
+        right: -50px;
+        bottom: -60px;
+      }
+    }
     @include media-breakpoint-down(sm) {
       gap: 40px;
     }
@@ -179,6 +191,20 @@
   padding: 60px 0;
   @include media-breakpoint-down(sm) {
     padding: 40px 0;
+  }
+  & > .container-xl {
+    @include media-breakpoint-up(xl) {
+      &:before {
+        content: '';
+        width: 565px;
+        height: 360px;
+        background: $green;
+        position: absolute;
+        z-index: -1;
+        right: -50px;
+        top: -60px;
+      }
+    }
   }
   .image-column {
     gap: 30px;
