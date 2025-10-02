@@ -1,16 +1,16 @@
 <section class="pricing-plans-section">
   <div class="container-xl d-flex flex-column">
     <div class="section-header row gx-6">
-      <div class="col-lg-5 text-lg-end">
+      <div class="col-lg-6 col-xl-5 text-center text-lg-end">
         <h2 class="section-title mb-0 text-uppercase" data-aos="fade-right">Investment</h2>
       </div>
-      <div class="col-lg-6 section-description d-flex flex-column">
+      <div class="col-lg-6 section-description d-flex flex-column text-center text-lg-start">
         <p class="mb-0" data-aos="fade-left">Zoom Wedding Studio has the talent and tools to fit your needs and customize any package of your choice.</p>
         <p class="lead mb-0" data-aos="fade-left" data-aos-delay="300"><strong>The price starts at $1,550!</strong></p>
       </div>  
     </div>
     <div class="pricing-tabs-section d-flex flex-column">
-      <div class="btn-group d-flex justify-content-center align-self-center" role="group" aria-label="Pricing radio toggle button group" data-aos="fade-up">
+      <div class="btn-group d-flex justify-content-center align-self-sm-center" role="group" aria-label="Pricing radio toggle button group" data-aos="fade-up">
         <input 
           type="radio" 
           class="btn-check" 
@@ -58,7 +58,7 @@
       <div class="tab-content">
         <div class="tab-pane fade show active" id="pricing-photo-video-tab" role="tabpanel" aria-labelledby="pricing-photo-video">
           <div class="row justify-content-center">
-            <div class="col-lg-3" data-aos="fade-up">
+            <div class="col-sm-6 col-xl-3" data-aos="fade-up">
               <div class="pricing-plan-card d-flex flex-column align-items-center text-center h-100">
                 <h3 class="plan-title mb-0 d-flex flex-column align-items-center text-uppercase w-100">
                   <svg width="59" height="50" viewBox="0 0 59 50">
@@ -92,7 +92,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-delay="300">
               <div class="pricing-plan-card d-flex flex-column align-items-center text-center h-100">
                 <h3 class="plan-title mb-0 d-flex flex-column align-items-center text-uppercase w-100">
                   <svg width="59" height="50" viewBox="0 0 59 50">
@@ -127,7 +127,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="600">
+            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-delay="600">
               <div class="pricing-plan-card d-flex flex-column align-items-center text-center h-100">
                 <h3 class="plan-title mb-0 d-flex flex-column align-items-center text-uppercase w-100">
                   <svg width="59" height="50" viewBox="0 0 59 50">
@@ -164,7 +164,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="900">
+            <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-delay="900">
               <div class="pricing-plan-card d-flex flex-column align-items-center text-center h-100">
                 <h3 class="plan-title mb-0 d-flex flex-column align-items-center text-uppercase w-100">
                   <svg width="59" height="50" viewBox="0 0 59 50">
