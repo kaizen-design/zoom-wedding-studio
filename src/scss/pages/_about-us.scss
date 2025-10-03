@@ -16,6 +16,16 @@ body.page-template-page-about-us {
   @include media-breakpoint-down(sm) {
     padding: 40px 0;
   }
+  & > .container-xl {
+    & > .row {
+      @include media-breakpoint-down(xl) {
+        justify-content: center;
+      }
+      @include media-breakpoint-down(md) {
+        justify-content: flex-start;
+      }
+    }
+  }
   .section-image {
     .manager-card {
       position: absolute;
@@ -23,10 +33,19 @@ body.page-template-page-about-us {
       min-width: 170px;
       right: -85px;
       bottom: 60px;
+      @include media-breakpoint-down(md) {
+        min-width: calc(52.5vw - 5vw);
+        right: auto;
+        bottom: 40px;
+        left: 47.5vw;
+      }
     }
   }
   .section-content {
     gap: 30px;
+    @include media-breakpoint-down(md) {
+      gap: 20px;
+    }
     &:before {
       content: '';
       background: $gray-200;
@@ -36,6 +55,14 @@ body.page-template-page-about-us {
       right: 0;
       bottom: -60px;
       left: -295px;
+      @include media-breakpoint-down(md) {
+        left: -30px;
+        right: -30px;
+        bottom: -275px;
+      }
+      @include media-breakpoint-down(sm) {
+        top: -40px;
+      }
     }
     p {
       font-size: rem-calc(18px);
@@ -55,10 +82,13 @@ body.page-template-page-about-us {
     line-height: 1.2;
     font-family: $font-family-serif;
     font-weight: 700;
+    @include media-breakpoint-down(xl) {
+      font-size: rem-calc(30px);
+    }
     @include media-breakpoint-down(md) {
       gap: 10px;
-      font-size: rem-calc(30px);
-      line-height: 1;
+      font-size: rem-calc(24px);
+      line-height: 1.25;
     }
     .section-subtitle {
       color: $primary;

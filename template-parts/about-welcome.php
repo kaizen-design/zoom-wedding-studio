@@ -1,7 +1,14 @@
 <section class="welcome-section">
   <div class="container-xl">
-     <div class="row align-items-start">
-        <div class="col-xl-4 offset-xl-1 section-image position-relative">
+     <div class="row align-items-start gy-5">
+        <div class="col-md-6 col-lg-5 offset-md-2 offset-lg-1 section-content d-flex flex-column position-relative py-lg-6 pe-md-6">
+          <h2 class="section-title mb-0 d-flex flex-column">
+            <small class="section-subtitle text-uppercase" data-aos="fade-left">About us</small>
+            <span data-aos="fade-left" data-aos-delay=150>Welcome to ZOOM WEDDING STUDIO</span>
+          </h2>
+          <p class="mb-0" data-aos="fade-left" data-aos-delay=300>A place where every wedding is turned into art. Our passion is to create memories that you will enjoy for a lifetime. Get to know our philosophy, our work process and of course the people who make your happiness everlasting.</p>
+        </div>
+        <div class="col-7 col-md-4 col-lg-5 col-xl-4 offset-xl-1 section-image position-relative order-md-first">
           <div class="zoom-image-card overflow-hidden" data-aos="fade-right">
             <img 
               src="<?= get_template_directory_uri() ?>/assets/tmp/welcome-img.webp" 
@@ -37,13 +44,6 @@
               </ul>
             </div>
           </div>
-        </div>
-        <div class="col-xl-5 offset-xl-1 section-content d-flex flex-column position-relative py-6 pe-6">
-          <h2 class="section-title mb-0 d-flex flex-column">
-            <small class="section-subtitle text-uppercase" data-aos="fade-left">About us</small>
-            <span data-aos="fade-left" data-aos-delay=150>Welcome to ZOOM WEDDING STUDIO</span>
-          </h2>
-          <p class="mb-0" data-aos="fade-left" data-aos-delay=300>A place where every wedding is turned into art. Our passion is to create memories that you will enjoy for a lifetime. Get to know our philosophy, our work process and of course the people who make your happiness everlasting.</p>
         </div>
      </div>
   </div>
