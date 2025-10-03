@@ -11,6 +11,117 @@ body.page-template-page-about-us {
   } 
 }
 
+.welcome-section {
+  padding: 60px 0;
+  @include media-breakpoint-down(sm) {
+    padding: 40px 0;
+  }
+  .section-image {
+    .manager-card {
+      position: absolute;
+      z-index: 1;
+      min-width: 170px;
+      right: -85px;
+      bottom: 60px;
+    }
+  }
+  .section-content {
+    gap: 30px;
+    &:before {
+      content: '';
+      background: $gray-200;
+      position: absolute;
+      z-index: -1;
+      top: -60px;
+      right: 0;
+      bottom: -60px;
+      left: -295px;
+    }
+    p {
+      font-size: rem-calc(18px);
+      line-height: 1.33;
+      font-weight: 300;
+      color: $gray-600;
+      margin: 0;
+      @include media-breakpoint-down(md) {
+        font-size: rem-calc(16px);
+      }
+    }
+  }
+  .section-title {
+    gap: 20px;
+    color: $gray-900;
+    font-size: rem-calc(40px);
+    line-height: 1.2;
+    font-family: $font-family-serif;
+    font-weight: 700;
+    @include media-breakpoint-down(md) {
+      gap: 10px;
+      font-size: rem-calc(30px);
+      line-height: 1;
+    }
+    .section-subtitle {
+      color: $primary;
+      font-family: $font-family-base;
+      font-size: rem-calc(16px);
+      font-weight: 400;
+      @include media-breakpoint-down(md) {
+        font-size: rem-calc(14px);
+        line-height: 1;
+      }
+    }
+  }
+}
+
+.manager-card {
+  box-shadow: 0 10px 14px 0px rgba(0,0,0,.04);
+  background: $white;
+  border-radius: 10px;
+  .card-header {
+    padding: 14px;
+    gap: 2px;
+    .card-title {
+      font-size: rem-calc(21px);
+      line-height: 1;
+      font-weight: 400;
+      font-family: $font-family-base;
+      color: $gray-900;
+    }
+    .card-meta {
+      font-size: rem-calc(16px);
+      line-height: 1.4375;
+      font-weight: 300;
+    }
+  }
+  .card-footer {
+    background: $primary;
+    padding: 10px;
+  }
+}
+
+.manager-contact-list {
+  gap: 20px;
+  li {
+    a {
+      &:hover {
+        svg {
+          path {
+            fill: $gray-900;
+          }
+        }
+      }
+      svg {
+        width: 24px;
+        height: 24px;
+        path {
+          fill: $white;
+          transition: $transition-base;
+        }
+      }
+    }
+  }
+}
+
 /* .pricing-plans-section {
   padding: 60px 0;
   @include media-breakpoint-down(sm) {
