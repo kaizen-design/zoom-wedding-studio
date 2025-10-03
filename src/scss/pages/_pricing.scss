@@ -135,7 +135,7 @@
     }
     &:not(.show) {
       height: 0;
-      //visibility: hidden;
+      z-index: -1;
       position: absolute;
       top: 0;
       left: 0;
