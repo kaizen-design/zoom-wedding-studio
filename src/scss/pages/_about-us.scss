@@ -152,6 +152,44 @@ body.page-template-page-about-us {
   }
 }
 
+.about-video-section {
+  padding: 60px 0 0;
+  background: $gray-900;
+  margin-bottom: 180px;
+  @include media-breakpoint-down(sm) {
+    padding: 40px 0 0;
+  }
+  .section-content {
+    gap: 40px;
+  }
+  .section-header {
+    gap: 30px;
+    .section-title {
+      color: $white;
+      font-size: rem-calc(60px);
+      font-weight: 700;
+      line-height: 1;
+      max-width: 460px;
+    }
+    p {
+      font-size: rem-calc(18px);
+      line-height: 1.33;
+      font-weight: 300;
+      color: $gray-500;
+      margin: 0;
+      max-width: 600px;
+      @include media-breakpoint-down(md) {
+        font-size: rem-calc(16px);
+      }
+    }
+  }
+  .section-video {
+    border-radius: 16px;
+    overflow: hidden; 
+    margin-bottom: -120px;
+  }
+}
+
 /* .pricing-plans-section {
   padding: 60px 0;
   @include media-breakpoint-down(sm) {
