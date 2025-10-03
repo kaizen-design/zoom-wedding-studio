@@ -1,7 +1,7 @@
 <section class="about-video-section">
   <div class="container-xl">
     <div class="row justify-content-center">
-      <div class="section-content col-lg-10 d-flex flex-column">
+      <div class="section-content col-lg-11 col-xl-10 d-flex flex-column">
         <div class="section-header d-flex flex-column align-items-center text-center">
           <h2 class="section-title mb-0" data-aos="fade-up">In the depths of the filming process</h2>
           <p class="mb-0" data-aos="fade-up" data-aos-delay="150">Immerse yourself in our everyday world - from the exquisite preparation to the magic of the moment of the shoot.</p>
