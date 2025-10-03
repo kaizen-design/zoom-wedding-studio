@@ -55,7 +55,7 @@
           Video
         </label>
       </div>
-      <div class="tab-content">
+      <div class="tab-content position-relative">
         <div class="tab-pane fade show active" id="pricing-photo-video-tab" role="tabpanel" aria-labelledby="pricing-photo-video">
           <div class="row justify-content-center">
             <div class="col-sm-6 col-xl-3" data-aos="fade-up" data-aos-anchor-placement="top-bottom">

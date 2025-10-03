@@ -101,13 +101,15 @@ function initPricingTabs() {
       $tabContents.forEach(content => {
         content.classList.remove('active')
         content.classList.remove('show');
-        //content.querySelectorAll('.aos-animate').forEach(i => i.classList.remove('aos-animate'));
+        content.querySelectorAll('.aos-animate').forEach(i => i.classList.remove('aos-animate'));
       });
       const $tab = document.getElementById(`${e.target.id}-tab`);
       $tab.classList.add('active');
       $tab.classList.add('show');
-      //$tab.querySelectorAll('.aos-init').forEach(i => i.classList.add('aos-animate'));
-      AOS.refresh();
+      setTimeout(() => {
+        $tab.querySelectorAll('.aos-init').forEach(i => i.classList.add('aos-animate'));
+      }, 150);
+      //AOS.refresh();
     }, false)
   });
 }

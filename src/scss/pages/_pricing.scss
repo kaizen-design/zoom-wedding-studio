@@ -124,7 +124,7 @@
     }
   }
   .tab-pane {
-    height: auto;
+    //height: auto;
     & > .row {
       @include media-breakpoint-down(xl) {
         row-gap: 20px;
@@ -135,7 +135,11 @@
     }
     &:not(.show) {
       height: 0;
-      visibility: hidden;
+      //visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
       @include media-breakpoint-down(sm) {
         display: none;
       }
