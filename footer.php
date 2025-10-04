@@ -7,10 +7,10 @@
             <a href="<?= get_site_url() ?>">Home</a>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a href="<?= get_site_url() ?>/projects/">Projects</a>
           </li>
           <li>
-            <a href="#">Portfolio</a>
+            <a href="<?= get_site_url() ?>/videography/">Portfolio</a>
           </li>
         </ul>
       </div>
@@ -22,13 +22,13 @@
       <div class="col-6 col-lg" data-aos="fade-left">
         <ul class="footer-nav-menu list-unstyled d-flex flex-column flex-md-row justify-content-end mb-0 align-items-end">
           <li>
-            <a href="#">Investment</a>
+            <a href="<?= get_site_url() ?>/investment/">Investment</a>
           </li>
           <li>
-            <a href="#">About us</a>
+            <a href="<?= get_site_url() ?>/about-us/">About us</a>
           </li>
           <li>
-            <a href="#">Contact us</a>
+            <a href="<?= get_site_url() ?>/contact-us/">Contact us</a>
           </li>
         </ul>
       </div>

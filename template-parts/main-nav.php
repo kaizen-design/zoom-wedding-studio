@@ -11,13 +11,13 @@
           <hr />
           <ul class="top-nav-menu list-unstyled d-flex justify-content-start mb-0">
             <li>
-              <a href="#">Projects</a>
+              <a href="<?= get_site_url() ?>/projects/">Projects</a>
             </li>
             <li>
-              <a href="#">Photo</a>
+              <a href="<?= get_site_url() ?>/photography/">Photo</a>
             </li>
             <li>
-              <a href="#">Video</a>
+              <a href="<?= get_site_url() ?>/videography/">Video</a>
             </li>
           </ul>
         </div>
@@ -49,13 +49,13 @@
           <hr />
           <ul class="top-nav-menu list-unstyled d-flex justify-content-end mb-0">
             <li>
-              <a href="#">Investment</a>
+              <a href="<?= get_site_url() ?>/investment/">Investment</a>
             </li>
             <li>
-              <a href="#">About us</a>
+              <a href="<?= get_site_url() ?>/about-us/">About us</a>
             </li>
             <li>
-              <a href="#">Contact us</a>
+              <a href="<?= get_site_url() ?>/contact-us/">Contact us</a>
             </li>
           </ul>
         </div>

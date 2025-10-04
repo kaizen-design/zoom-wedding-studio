@@ -7,22 +7,22 @@
   </div>
   <ul class="mobile-menu list-unstyled mb-auto d-flex flex-column">
     <li>
-      <a href="#" class="off-canvas-toggle">Projects</a>
+      <a href="<?= get_site_url() ?>/projects/" class="off-canvas-toggle">Projects</a>
     </li>
     <li>
-      <a href="#" class="off-canvas-toggle">Photo</a>
+      <a href="<?= get_site_url() ?>/photography/" class="off-canvas-toggle">Photo</a>
     </li>
     <li>
-      <a href="#" class="off-canvas-toggle">Video</a>
+      <a href="<?= get_site_url() ?>/videography/" class="off-canvas-toggle">Video</a>
     </li>
     <li>
-      <a href="#" class="off-canvas-toggle">Investment</a>
+      <a href="<?= get_site_url() ?>/investment/" class="off-canvas-toggle">Investment</a>
     </li>
     <li>
-      <a href="#" class="off-canvas-toggle">About us</a>
+      <a href="<?= get_site_url() ?>/about-us/" class="off-canvas-toggle">About us</a>
     </li>
     <li>
-      <a href="#" class="off-canvas-toggle">Contact us</a>
+      <a href="<?= get_site_url() ?>/contact-us/" class="off-canvas-toggle">Contact us</a>
     </li>
   </ul>
   <a href="tel:13058098552" class="phone-number align-self-center">+1 305-809-8552</a>

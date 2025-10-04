@@ -124,7 +124,6 @@
     }
   }
   .tab-pane {
-    //height: auto;
     & > .row {
       @include media-breakpoint-down(xl) {
         row-gap: 20px;
