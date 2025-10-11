@@ -7,10 +7,40 @@ window.onload = () => {
   AOS.init();
   initPricingTabs();
   initPhotoSlider();
+  initTeamSlider();
   //initTabs();
   //initAccordion();
   //initSmoothScroll();
 };
+
+function initTeamSlider() {
+  const $slider = document.querySelector('.team-slider');
+  if (!$slider) return;
+  const swiper = new Swiper($slider, {
+    spaceBetween: 10,
+    slidesPerView: 2,
+    navigation: {
+      nextEl: '.team-slider + .slider-footer .slide-next',
+      prevEl: '.team-slider + .slider-footer .slide-prev',
+    },
+    pagination: {
+      type: 'fraction',
+      el: '.team-slider + .slider-footer .slides-counter',
+      renderFraction: function (currentClass, totalClass) {
+      return '<span class="' + currentClass + '"></span>' +
+              ' / ' +
+              '<span class="' + totalClass + '"></span>';
+      },
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      576: {
+        slidesPerView: 3,
+        freeMode: true,
+      },
+    }
+  });
+}
 
 function initPhotoSlider() {
   const $slider = document.querySelector('.about-photo-slider');
