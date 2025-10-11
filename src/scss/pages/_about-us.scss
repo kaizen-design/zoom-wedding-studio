@@ -214,3 +214,61 @@ body.page-template-page-about-us {
     }
   }
 }
+
+.about-photo-section {
+  padding: 0 0 60px;
+  /* @include media-breakpoint-down(sm) {
+    padding: 40px 0;
+  } */
+  .section-content {
+    gap: 30px;
+  }
+} 
+
+.about-photo-slider {
+  width: 100%; 
+  max-width: 100%; 
+  min-height: 0; 
+  min-width: 0;
+  
+  & + .swiper-pagination {
+    gap: 6px;
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background: $primary;
+      opacity: 0.4;
+      margin: 0 4px;
+      transition: $transition-base;
+      &:not(.swiper-pagination-bullet-active):hover {
+        outline: 1px solid rgb(200, 168, 152, 0.4);
+        outline-offset: 3px;
+      }
+      &.swiper-pagination-bullet-active {
+        opacity: 1;
+        outline: 1px solid $primary;
+        outline-offset: 3px;
+      }
+    }
+  }
+  
+}
+
+.about-photo-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 38.144329896907216% repeat(2, 1fr);
+  grid-template-rows: 44.32% 1fr;
+  .photo-card {
+    &:first-child {
+      grid-row: 1 / 4;
+    }
+    &:last-child {
+      grid-column: 2 / 4;
+      grid-row: 2 / 4;
+    }
+    & > img {
+      object-fit: cover;
+    }
+  }
+}

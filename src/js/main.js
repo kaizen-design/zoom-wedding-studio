@@ -6,10 +6,26 @@ window.onload = () => {
   initProjectSlider();
   AOS.init();
   initPricingTabs();
+  initPhotoSlider();
   //initTabs();
   //initAccordion();
   //initSmoothScroll();
 };
+
+function initPhotoSlider() {
+  const $slider = document.querySelector('.about-photo-slider');
+  if (!$slider) return;
+  const swiper = new Swiper($slider, {
+    loop: true,
+    spaceBetween: 30,
+    //effect: "fade",
+    //fadeEffect: { crossFade: true },
+    pagination: {
+      el: '.about-photo-slider + .swiper-pagination',
+      clickable: true,
+    }
+  });
+}
 
 function initProjectSlider() {
   const $slider = document.querySelector('.project-hero-slider .swiper');
