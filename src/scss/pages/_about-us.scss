@@ -353,9 +353,10 @@ body.page-template-page-about-us {
   max-height: 100vh; 
   min-height: 0; 
   min-width: 0; 
-  /* @include media-breakpoint-down(sm) {
-    overflow: hidden!important;
-  } */
+  margin-top: -54px;
+  @include media-breakpoint-down(sm) {
+    margin-top: -48.13px;
+  }
   .swiper-wrapper {
     transition-timing-function: linear!important;
     //gap: 10px;
@@ -369,8 +370,13 @@ body.page-template-page-about-us {
 }
 
 .team-card {
+  transform: translateY(54px);
+  transition: $transition-base;
+  @include media-breakpoint-down(sm) {
+    transform: translateY(48.13px);
+  }
   &:hover {
-    
+    transform: translateY(0);
   }
   .card-img {
     border-radius: 10px;

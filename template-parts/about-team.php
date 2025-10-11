@@ -1,6 +1,6 @@
 <section class="about-team-section">
   <div class="container-xl">
-    <div class="row align-items-center">
+    <div class="row align-items-center gy-4">
       <div class="section-content col-lg-5 col-xl-4 d-flex flex-column">
         <h2 class="section-title mb-0 d-flex flex-column">
           <small class="section-subtitle text-uppercase" data-aos="fade-left">Our team</small>
@@ -12,9 +12,9 @@
         <div class="slider-box d-flex flex-column">
           <div class="team-slider swiper">
             <div class="swiper-wrapper d-flex">
-              <?php foreach(range(1, 2) as $_i): ?>
-                <div class="swiper-slide">
-                  <div class="team-card d-flex flex-column overflow-hidden" data-aos="fade-up">
+              <?php foreach(range(1, 3) as $_i): ?>
+                <div class="swiper-slide" data-aos="fade-up">
+                  <div class="team-card d-flex flex-column overflow-hidden">
                     <div class="card-img overflow-hidden ratio ratio-1x1">
                       <img 
                         src="<?= get_template_directory_uri() ?>/assets/tmp/team/member-1.webp" 
@@ -31,8 +31,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="team-card d-flex flex-column overflow-hidden" data-aos="fade-up" data-aos-delay="150">
+                <div class="swiper-slide" data-aos="fade-up" data-aos-delay="150">
+                  <div class="team-card d-flex flex-column overflow-hidden">
                     <div class="card-img overflow-hidden ratio ratio-1x1">
                       <img 
                         src="<?= get_template_directory_uri() ?>/assets/tmp/team/member-2.webp" 
@@ -49,8 +49,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="team-card d-flex flex-column overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+                <div class="swiper-slide" data-aos="fade-up" data-aos-delay="300">
+                  <div class="team-card d-flex flex-column overflow-hidden">
                     <div class="card-img overflow-hidden ratio ratio-1x1">
                       <img 
                         src="<?= get_template_directory_uri() ?>/assets/tmp/team/member-3.webp" 
@@ -67,8 +67,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
-                  <div class="team-card d-flex flex-column overflow-hidden" data-aos="fade-up" data-aos-delay="450">
+                <div class="swiper-slide" data-aos="fade-up" data-aos-delay="450">
+                  <div class="team-card d-flex flex-column overflow-hidden">
                     <div class="card-img overflow-hidden ratio ratio-1x1">
                       <img 
                         src="<?= get_template_directory_uri() ?>/assets/tmp/team/member-4.webp" 
