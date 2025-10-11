@@ -17,12 +17,20 @@ function initPhotoSlider() {
   if (!$slider) return;
   const swiper = new Swiper($slider, {
     loop: true,
-    spaceBetween: 30,
+    spaceBetween: 10,
     //effect: "fade",
     //fadeEffect: { crossFade: true },
     pagination: {
       el: '.about-photo-slider + .swiper-pagination',
       clickable: true,
+    },
+    breakpoints: {
+      576: {
+        spaceBetween: 20,
+      },
+      992: {
+        spaceBetween: 30,
+      },
     }
   });
 }

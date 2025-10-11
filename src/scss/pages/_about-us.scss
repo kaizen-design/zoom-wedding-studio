@@ -222,6 +222,9 @@ body.page-template-page-about-us {
   } */
   .section-content {
     gap: 30px;
+    @include media-breakpoint-down(sm) {
+      gap: 20px;
+    }
   }
 } 
 
@@ -251,7 +254,6 @@ body.page-template-page-about-us {
       }
     }
   }
-  
 }
 
 .about-photo-grid {
@@ -259,6 +261,12 @@ body.page-template-page-about-us {
   gap: 30px;
   grid-template-columns: 38.144329896907216% repeat(2, 1fr);
   grid-template-rows: 44.32% 1fr;
+  @include media-breakpoint-down(lg) {
+    gap: 20px;
+  }
+  @include media-breakpoint-down(sm) {
+    gap: 10px;
+  }
   .photo-card {
     &:first-child {
       grid-row: 1 / 4;
