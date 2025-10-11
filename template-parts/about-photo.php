@@ -1,7 +1,7 @@
 <section class="about-photo-section">
   <div class="container-xl">
     <div class="row justify-content-center">
-      <div class="section-content col-lg-11 col-xl-10 d-flex flex-column">
+      <div class="section-content col-lg-11 col-xl-10 d-flex flex-column position-relative">
         <div class="about-photo-slider swiper">
           <div class="swiper-wrapper">
             <?php foreach(range(1, 4) as $_slide): ?>

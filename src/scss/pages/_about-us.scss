@@ -217,11 +217,27 @@ body.page-template-page-about-us {
 
 .about-photo-section {
   padding: 0 0 60px;
-  /* @include media-breakpoint-down(sm) {
-    padding: 40px 0;
-  } */
+  @include media-breakpoint-down(sm) {
+    padding: 0 0 40px;
+  }
   .section-content {
     gap: 30px;
+    &:after {
+      content: '';
+      width: 350px;
+      height: 360px;
+      background: $green;
+      position: absolute;
+      z-index: -1;
+      left: -150px;
+      bottom: -60px;
+      @include media-breakpoint-down(sm) {
+        bottom: -40px;
+        height: 160px;
+        width: 55vw;
+        left: -20px;
+      }
+    }
     @include media-breakpoint-down(sm) {
       gap: 20px;
     }
@@ -244,8 +260,9 @@ body.page-template-page-about-us {
       margin: 0 4px;
       transition: $transition-base;
       &:not(.swiper-pagination-bullet-active):hover {
-        outline: 1px solid rgb(200, 168, 152, 0.4);
+        outline: 1px solid rgb(200, 168, 152, 0.6);
         outline-offset: 3px;
+        opacity: 0.6;
       }
       &.swiper-pagination-bullet-active {
         opacity: 1;
