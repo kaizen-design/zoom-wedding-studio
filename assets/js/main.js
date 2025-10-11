@@ -18,8 +18,8 @@ function initPhotoSlider() {
   const swiper = new Swiper($slider, {
     loop: true,
     spaceBetween: 10,
-    //effect: "fade",
-    //fadeEffect: { crossFade: true },
+    effect: "fade",
+    fadeEffect: { crossFade: true },
     pagination: {
       el: '.about-photo-slider + .swiper-pagination',
       clickable: true,
@@ -34,7 +34,11 @@ function initPhotoSlider() {
     }
   });
   swiper.on('slideChange', function () {
-    //AOS.refresh();
+    $slider.querySelectorAll('.aos-animate').forEach(i => i.classList.remove('aos-animate'));
+    const activeSlide = swiper.slides[swiper.activeIndex];
+    setTimeout(() => {
+      activeSlide.querySelectorAll('.aos-init').forEach(i => i.classList.add('aos-animate'));
+    }, 150);
   });
 }
 
