@@ -33,6 +33,9 @@ function initPhotoSlider() {
       },
     }
   });
+  swiper.on('slideChange', function () {
+    //AOS.refresh();
+  });
 }
 
 function initProjectSlider() {

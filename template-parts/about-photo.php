@@ -7,7 +7,7 @@
             <?php foreach(range(1, 4) as $_slide): ?>
               <div class="swiper-slide">
                 <div class="about-photo-grid">
-                  <div class="photo-card overflow-hidden">
+                  <div class="photo-card overflow-hidden" data-aos="fade-up">
                     <img 
                       src="<?= get_template_directory_uri() ?>/assets/tmp/about-slider/about-image-1.webp" 
                       class="img-fluid w-100 h-100" 
@@ -17,7 +17,7 @@
                       loading="lazy"
                     />
                   </div>
-                  <div class="photo-card overflow-hidden">
+                  <div class="photo-card overflow-hidden" data-aos="fade-up" data-aos-delay="150">
                     <img 
                       src="<?= get_template_directory_uri() ?>/assets/tmp/about-slider/about-image-2.webp" 
                       class="img-fluid w-100 h-100" 
@@ -27,7 +27,7 @@
                       loading="lazy"
                     />
                   </div>
-                  <div class="photo-card overflow-hidden">
+                  <div class="photo-card overflow-hidden" data-aos="fade-up" data-aos-delay="300">
                     <img 
                       src="<?= get_template_directory_uri() ?>/assets/tmp/about-slider/about-image-3.webp" 
                       class="img-fluid w-100 h-100" 
@@ -37,7 +37,7 @@
                       loading="lazy"
                     />
                   </div>
-                  <div class="photo-card overflow-hidden">
+                  <div class="photo-card overflow-hidden" data-aos="fade-up" data-aos-delay="450">
                     <img 
                       src="<?= get_template_directory_uri() ?>/assets/tmp/about-slider/about-image-4.webp" 
                       class="img-fluid w-100 h-100" 
