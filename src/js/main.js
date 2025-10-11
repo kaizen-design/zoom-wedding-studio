@@ -8,8 +8,8 @@ window.onload = () => {
   initPricingTabs();
   initPhotoSlider();
   initTeamSlider();
+  initAccordion();
   //initTabs();
-  //initAccordion();
   //initSmoothScroll();
 };
 

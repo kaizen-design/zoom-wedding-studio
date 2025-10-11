@@ -14,6 +14,7 @@ get_header(); ?>
   <?php get_template_part( 'template-parts/about', 'photo' ); ?>
   <?php get_template_part( 'template-parts/about', 'team' ); ?>
   <?php get_template_part( 'template-parts/about', 'awards' ); ?>
+  <?php get_template_part( 'template-parts/section', 'faq' ); ?>
   <?php get_template_part( 'template-parts/section', 'contact' ); ?>
   <?php get_template_part( 'template-parts/section', 'instagram' ); ?>
 </main>
