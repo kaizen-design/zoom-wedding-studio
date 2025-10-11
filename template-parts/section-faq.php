@@ -58,13 +58,13 @@
                     <svg class="caret" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="_::before" data-name="&amp;::before" width="30" height="30" viewBox="0 0 30 30">
                       <defs>
                         <style>
-                          .cls-1 {
+                          .caret-arrow-bg {
                             fill: #b9af99;
                             fill-opacity: 0;
                           }
                         </style>
                       </defs>
-                      <rect id="bg:transparent" class="cls-1" width="30" height="30"/>
+                      <rect id="bg:transparent" class="caret-arrow-bg" width="30" height="30"/>
                       <image id="_::before-2" data-name="&amp;::before" x="9" y="11" width="13" height="8" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAICAYAAAAiJnXPAAAAeElEQVQYlYXNsQnCQAAF0GcQHMYl7CNuYHNLiAuIg1imshbJIkELezsrEQnmIFzu8Jf/8/izEIJCKnxyUzVpftnghcNkKaAeNFhgj+M/FMEbW3TYpXCMxmCNE1Y5GFEKrkP/yME5lgUQE2E7wHv/9MQFdQak8IzbFwwdILbbDihNAAAAAElFTkSuQmCC"/>
                     </svg>
                   </a>
