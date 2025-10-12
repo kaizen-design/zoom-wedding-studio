@@ -6,7 +6,9 @@
           <img 
             src="<?= get_template_directory_uri() ?>/assets/tmp/instagram/photo-<?= $_i ?>.webp" 
             class="w-100 h-100 img-fluid" 
-            alt=""
+            width="200"
+            height="200"
+            alt="<?= bloginfo('name') ?>"
             loading="lazy"
           />
         </a>
@@ -18,7 +20,9 @@
           <img 
             src="<?= get_template_directory_uri() ?>/assets/tmp/instagram/photo-<?= $_i ?>.webp" 
             class="w-100 h-100 img-fluid" 
-            alt=""
+            width="200"
+            height="200"
+            alt="<?= bloginfo('name') ?>"
             loading="lazy"
           />
         </a>
