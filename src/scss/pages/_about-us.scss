@@ -630,8 +630,8 @@ body.page-template-page-about-us {
 
 .advantages-section {
   padding-bottom: 60px;
-  @include media-breakpoint-down(sm) {
-    padding-bottom: 40px;
+  @include media-breakpoint-down(md) {
+    padding-bottom: 0;
   }
   .section-content {
     gap: 30px;
@@ -639,6 +639,20 @@ body.page-template-page-about-us {
     padding: 60px 60px 60px calc(calc(8.33333333% * 2) + 30px);
     @include media-breakpoint-down(md) {
       gap: 20px;
+      padding: 60px 0;
+      &:before {
+        content: '';
+        background: $gray-200;
+        position: absolute;
+        left: -30px;
+        right: -30px;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      padding: 40px 0;
     }
     .section-title {
       gap: 20px;
@@ -681,5 +695,8 @@ body.page-template-page-about-us {
     position: absolute;
     bottom: -60px;
     left: -335px;
+    @include media-breakpoint-down(xl) {
+      left: -375px;
+    }
   }
 }

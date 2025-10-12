@@ -1,7 +1,7 @@
 <section class="advantages-section">
   <div class="container-xl">
      <div class="row">
-        <div class="section-content col-lg-8 offset-lg-3 d-flex flex-column position-relative">
+        <div class="section-content col-md-8 offset-md-3 d-flex flex-column position-relative">
           <h2 class="section-title mb-0 d-flex flex-column">
             <small class="section-subtitle text-uppercase" data-aos="fade-left">ADVANTAGES</small>
             <span data-aos="fade-left" data-aos-delay=150>Why Choose ZOOM WEDDING STUDIO?</span>
@@ -18,7 +18,7 @@
           </a>
           <img 
             src="<?= get_template_directory_uri() ?>/assets/tmp/advantages.webp" 
-            class="section-image img-fluid" 
+            class="section-image img-fluid d-none d-lg-block" 
             width="535"
             height="648"
             alt="Advanteges"
