@@ -45,6 +45,19 @@
           <span data-aos="fade-right" data-aos-delay=150>Have any questions?</span>
         </h2>
         <p class="mb-0" data-aos="fade-right" data-aos-delay=300>Answers to your most common questions so you feel confident in choosing us.</p>
+        <div class="flex-grow-1">
+          <div class="help-widget d-flex flex-column" data-aos="fade-right">
+            <h3 class="widget-title mb-0">Need Help?</h3>
+            <ul class="link-list list-unstyled mb-0 d-flex">
+              <li>
+                <a href="#">Chat with us</a>
+              </li>
+              <li>
+                <a href="#">Contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>  
       </div>
       <div class="section-content col-lg-6 offset-lg-1 d-flex flex-column px-lg-0 position-relative">
         <?php foreach($_faq_list as $_category => $_faq_items): ?>
