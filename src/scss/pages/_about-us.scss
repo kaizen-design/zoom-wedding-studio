@@ -433,6 +433,9 @@ body.page-template-page-about-us {
     .help-widget {
       position: sticky;
       top: 30px;
+      @include media-breakpoint-down(md) {
+        position: static;
+      }
     }
   }
   .section-title {
@@ -472,8 +475,17 @@ body.page-template-page-about-us {
       bottom: -60px;
       left: calc(-8.33333% - 30px);
       width: 100vw;
+      @include media-breakpoint-down(lg) {
+        left: 0;
+      }
+      @include media-breakpoint-down(md) {
+        left: -20px;
+        right: -20px;
+        width: auto;
+        top: -20px;
+      }
       @include media-breakpoint-down(sm) {
-        top: -40px;
+        top: -20px;
         bottom: -40px;
       }
     }
@@ -482,6 +494,9 @@ body.page-template-page-about-us {
 
 .faq-single-category {
   gap: 30px;
+  @include media-breakpoint-down(md) {
+    gap: 20px;
+  }
   .category-title {
     font-size: rem-calc(30px);
     font-weight: 700;
@@ -489,12 +504,26 @@ body.page-template-page-about-us {
     color: $gray-900;
     padding: 15px 30px;
     border-bottom: 1px solid rgba(98, 98, 98, 0.15);
+    @include media-breakpoint-down(lg) {
+      font-size: rem-calc(24px);
+    }
+    @include media-breakpoint-down(md) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: rem-calc(21px);
+    }
   }
 }
 
 .faq-list {
   padding-left: 30px;
   gap: 25px;
+  @include media-breakpoint-down(md) {
+    padding-left: 0;
+    gap: 15px;
+  }
   .list-item {
     .faq-title {
       font-size: rem-calc(21px);
@@ -504,6 +533,13 @@ body.page-template-page-about-us {
       text-decoration: none;
       gap: 15px;
       transition: $transition-base;
+      @include media-breakpoint-down(lg) {
+        font-size: rem-calc(18px);
+      }
+      @include media-breakpoint-down(sm) {
+        font-size: rem-calc(16px);
+        gap: 10px;
+      }
       &:hover, &:focus-visible {
         color: $primary;
       }
@@ -527,6 +563,7 @@ body.page-template-page-about-us {
       padding: 20px 20px 0 0;
       @include media-breakpoint-down(md) {
         font-size: rem-calc(16px);
+        padding: 10px 0 0 0;
       }
       a {
         color: $gray-600;
@@ -556,6 +593,12 @@ body.page-template-page-about-us {
   padding: 20px;
   gap: 15px;
   max-width: 270px;
+  @include media-breakpoint-down(md) {
+    background: transparent;
+    padding: 20px 0;
+    max-width: none;
+    box-shadow: none;
+  }
   .widget-title {
     font-size: rem-calc(21px);
     line-height: 1;
@@ -563,7 +606,10 @@ body.page-template-page-about-us {
     font-weight: 400;
     font-family: $font-family-base;
     padding-bottom: 15px;
-    border-bottom: 1px solid rgba(98, 98, 98, 0.15)
+    border-bottom: 1px solid rgba(98, 98, 98, 0.15);
+    @include media-breakpoint-down(md) {
+      font-size: rem-calc(18px);
+    }
   }
   .link-list {
     gap: 30px;

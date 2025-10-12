@@ -38,8 +38,8 @@
 
 <section class="faq-section">
   <div class="container-xl">
-    <div class="row">
-      <div class="section-header col-lg-4 d-flex flex-column pe-lg-0">
+    <div class="row gy-6">
+      <div class="section-header col-md-5 col-lg-4 d-flex flex-column pe-lg-0">
         <h2 class="section-title mb-0 d-flex flex-column">
           <small class="section-subtitle text-uppercase" data-aos="fade-right">FAQ</small>
           <span data-aos="fade-right" data-aos-delay=150>Have any questions?</span>
@@ -59,7 +59,7 @@
           </div>
         </div>  
       </div>
-      <div class="section-content col-lg-6 offset-lg-1 d-flex flex-column px-lg-0 position-relative">
+      <div class="section-content col-md-7 col-lg-6 offset-lg-1 d-flex flex-column px-lg-0 position-relative">
         <?php foreach($_faq_list as $_category => $_faq_items): ?>
           <div class="faq-single-category d-flex flex-column">
             <h3 class="mb-0 category-title text-uppercase" data-aos="fade-left"><?= $_category ?></h3>
