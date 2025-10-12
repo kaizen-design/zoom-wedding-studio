@@ -84,35 +84,35 @@ body.home {
       }
     }
     .section-content {
-    @include media-breakpoint-down(md) {
-      order: 1;
-    }
-    & + .col-md-6 {
-      position: relative;
-      @include media-breakpoint-down(sm) {
-        &:after {
-          content: '';
-          background: $white url("../images/contact-bg.webp") no-repeat top right -100px;
-          background-size: cover;
-          position: absolute;
-          left: -15px;
-          right: -15px;
-          bottom: -55px;
-          top: -59px;
-          z-index: 0;
-          opacity: .4;
+      @include media-breakpoint-down(md) {
+        order: 1;
+      }
+      & + .col-md-6 {
+        position: relative;
+        @include media-breakpoint-down(sm) {
+          &:after {
+            content: '';
+            background: $white url("../images/contact-bg.webp") no-repeat top right -100px;
+            background-size: cover;
+            position: absolute;
+            left: -15px;
+            right: -15px;
+            bottom: -55px;
+            top: -59px;
+            z-index: 0;
+            opacity: .4;
+          }
+        }
+        .section-title {
+          @include media-breakpoint-down(sm) {
+            font-size: rem-calc(24px);
+            color: $gray-100;
+            position: relative;
+            z-index: 1;
+          }
         }
       }
     }
-    .section-title {
-      @include media-breakpoint-down(sm) {
-        font-size: rem-calc(24px);
-        color: $gray-100;
-        position: relative;
-        z-index: 1;
-      }
-    }
-  }
   }
 }
 
