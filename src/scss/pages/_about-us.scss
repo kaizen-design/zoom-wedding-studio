@@ -472,7 +472,7 @@ body.page-template-page-about-us {
       position: absolute;
       z-index: -1;
       top: -60px;
-      bottom: -60px;
+      bottom: -140px;
       left: calc(-8.33333% - 30px);
       width: 100vw;
       @include media-breakpoint-down(lg) {
@@ -625,5 +625,61 @@ body.page-template-page-about-us {
         }
       }
     }
+  }
+}
+
+.advantages-section {
+  padding-bottom: 60px;
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 40px;
+  }
+  .section-content {
+    gap: 30px;
+    background: $gray-200;
+    padding: 60px 60px 60px calc(calc(8.33333333% * 2) + 30px);
+    @include media-breakpoint-down(md) {
+      gap: 20px;
+    }
+    .section-title {
+      gap: 20px;
+      color: $gray-900;
+      font-size: rem-calc(40px);
+      line-height: 1.2;
+      font-family: $font-family-serif;
+      font-weight: 700;
+      @include media-breakpoint-down(xl) {
+        font-size: rem-calc(30px);
+      }
+      @include media-breakpoint-down(md) {
+        gap: 10px;
+        font-size: rem-calc(24px);
+        line-height: 1.25;
+      }
+      .section-subtitle {
+        color: $primary;
+        font-family: $font-family-base;
+        font-size: rem-calc(16px);
+        font-weight: 400;
+        @include media-breakpoint-down(md) {
+          font-size: rem-calc(14px);
+          line-height: 1;
+        }
+      }
+    }
+    p {
+      font-size: rem-calc(18px);
+      line-height: 1.33;
+      font-weight: 300;
+      color: $gray-600;
+      margin: 0;
+      @include media-breakpoint-down(md) {
+        font-size: rem-calc(16px);
+      }
+    }
+  }
+  .section-image {
+    position: absolute;
+    bottom: -60px;
+    left: -335px;
   }
 }
