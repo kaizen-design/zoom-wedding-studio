@@ -36,11 +36,25 @@
           </form>
         </div>
         <div class="col-md-6 d-flex flex-column">
-          <h2 class="section-title mb-0 d-flex flex-column">
-            <span class="section-subtitle" data-aos="fade-left">Let's make</span>
-            <span class="text-uppercase" data-aos="fade-left" data-aos-delay="150">your dream a reality together</span>
-          </h2>
-          <p data-aos="fade-left" data-aos-delay="300" data-aos-anchor-placement="top-bottom">Contact us and we'll start planning your perfect wedding shoot.</p>
+          <?php if (get_field('form_subtitle', 'option') || get_field('form_title', 'option')): ?>
+            <h2 class="section-title mb-0 d-flex flex-column">
+              <?php if($form_subtitle = get_field('form_subtitle', 'option')): ?> 
+                <span class="section-subtitle" data-aos="fade-left">
+                  <?= $form_subtitle ?>
+                </span>
+              <?php endif; ?>  
+              <?php if($form_title = get_field('form_title', 'option')): ?> 
+                <span class="text-uppercase" data-aos="fade-left" data-aos-delay="150">
+                  <?= $form_title ?>
+                </span>
+              <?php endif; ?>  
+            </h2>
+          <?php endif; ?>
+          <?php if($form_description = get_field('form_description', 'option')): ?> 
+            <p data-aos="fade-left" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
+              <?= wp_kses_post($form_description) ?>
+            </p>
+          <?php endif; ?>  
         </div>
      </div>
   </div>
