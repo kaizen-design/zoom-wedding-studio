@@ -1,4 +1,4 @@
-<section class="contact-section position-relative">
+<section id="contact" class="contact-section position-relative">
   <div class="container-xl">
      <div class="row justify-content-between align-items-center gy-4">
         <div class="section-content col-md-6" data-aos="fade-right">
