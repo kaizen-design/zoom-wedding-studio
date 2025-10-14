@@ -36,21 +36,26 @@
           </form>
         </div>
         <div class="col-md-6 d-flex flex-column">
-          <?php if (get_field('form_subtitle', 'option') || get_field('form_title', 'option')): ?>
+          <?php 
+            $form_subtitle = get_field('contact_subtitle') ? get_field('contact_subtitle') : get_field('form_subtitle', 'option');
+            $form_title = get_field('contact_title') ? get_field('contact_title') : get_field('form_title', 'option');
+            $form_description = get_field('contact_description') ? get_field('contact_description') : get_field('form_description', 'option');
+          ?>
+          <?php if ($form_subtitle || $form_title): ?>
             <h2 class="section-title mb-0 d-flex flex-column">
-              <?php if($form_subtitle = get_field('form_subtitle', 'option')): ?> 
+              <?php if($form_subtitle): ?> 
                 <span class="section-subtitle" data-aos="fade-left">
                   <?= $form_subtitle ?>
                 </span>
               <?php endif; ?>  
-              <?php if($form_title = get_field('form_title', 'option')): ?> 
+              <?php if($form_title): ?> 
                 <span class="text-uppercase" data-aos="fade-left" data-aos-delay="150">
                   <?= $form_title ?>
                 </span>
               <?php endif; ?>  
             </h2>
           <?php endif; ?>
-          <?php if($form_description = get_field('form_description', 'option')): ?> 
+          <?php if($form_description): ?> 
             <p data-aos="fade-left" data-aos-delay="300" data-aos-anchor-placement="top-bottom">
               <?= wp_kses_post($form_description) ?>
             </p>

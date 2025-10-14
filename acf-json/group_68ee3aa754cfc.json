@@ -21,7 +21,7 @@
         },
         {
             "key": "field_68ee3aa82ba5a",
-            "label": "Project Subtitle (Category)",
+            "label": "Project Subtitle",
             "name": "project_subtitle",
             "aria-label": "",
             "type": "text",
@@ -83,6 +83,46 @@
             },
             "placement": "left",
             "endpoint": 0
+        },
+        {
+            "key": "field_68ee641bdbb28",
+            "label": "Project Hours",
+            "name": "project_hours",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "E.g. 8 hours",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_68ee6459dbb29",
+            "label": "Project Category",
+            "name": "project_category",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "E.g. Photo + Video",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_68ee3b702ba5c",
@@ -370,6 +410,26 @@
             },
             "placement": "left",
             "endpoint": 0
+        },
+        {
+            "key": "field_68ee751006dc7",
+            "label": "Enable Instagram Section",
+            "name": "enable_instagram_section",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 1,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
         },
         {
             "key": "field_68ee41dadf3a8",
@@ -705,5 +765,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1760446553
+    "modified": 1760458068
 }
