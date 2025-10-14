@@ -93,13 +93,6 @@ function initProjectSlider() {
               '<span class="' + totalClass + '"></span>';
       },
     },
-    breakpoints: {
-      // when window width is >= 320px
-      /* 576: {
-        slidesPerView: 'auto',
-        freeMode: true,
-      }, */
-    }
   });
 }
 

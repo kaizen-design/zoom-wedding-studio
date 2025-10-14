@@ -58,7 +58,7 @@
             "min": "",
             "max": "",
             "min_width": "",
-            "min_height": "",
+            "min_height": 460,
             "min_size": "",
             "max_width": "",
             "max_height": "",
@@ -194,7 +194,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Package Description",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -385,7 +385,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Instagram Reels",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -491,7 +491,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "",
                 "class": "",
                 "id": ""
             },
@@ -506,20 +506,17 @@
             "label": "Button URL",
             "name": "instagram_button_url",
             "aria-label": "",
-            "type": "text",
+            "type": "url",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "50",
+                "width": "",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
+            "placeholder": ""
         },
         {
             "key": "field_68ee433350f0b",
@@ -540,7 +537,7 @@
         },
         {
             "key": "field_68ee434750f0c",
-            "label": "Photography Title",
+            "label": "Photography Section Title",
             "name": "photography_title",
             "aria-label": "",
             "type": "text",
@@ -552,7 +549,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Wedding Photography",
             "maxlength": "",
             "placeholder": "",
             "prepend": "",
@@ -560,7 +557,7 @@
         },
         {
             "key": "field_68ee435d50f0d",
-            "label": "Photography Description",
+            "label": "Photography Section Description",
             "name": "photography_description",
             "aria-label": "",
             "type": "textarea",
@@ -572,7 +569,7 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
+            "default_value": "Each newlywed couple is a precious page from a huge wedding album that we create every day, every week, year after year!",
             "maxlength": "",
             "rows": 4,
             "placeholder": "",
@@ -708,5 +705,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1760445499
+    "modified": 1760446553
 }
