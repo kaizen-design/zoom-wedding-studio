@@ -25,7 +25,7 @@
             "name": "hero_image",
             "aria-label": "",
             "type": "image",
-            "instructions": "",
+            "instructions": "Optimal size: 1920x370px",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -610,5 +610,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1760461058
+    "modified": 1760496302
 }

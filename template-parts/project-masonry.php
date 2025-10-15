@@ -16,9 +16,9 @@
         </div> 
       <?php endif; ?>   
       <div class="masonry-grid row">
+        <?php $delay = 0; ?>
         <?php foreach($photography_gallery as $image): ?>
           <?php 
-            $delay = 300; 
             $thumbnail_url = wp_get_attachment_image_url( $image['ID'], 'medium' );
             $large_url = wp_get_attachment_image_url( $image['ID'], 'large' );
           ?>
@@ -35,7 +35,7 @@
               />
             </a>
           </div>
-          <?php $delay =+ 300; ?>
+          <?php $delay += 150; ?>
         <?php endforeach; ?>
       </div>
       <!-- <a href="#" class="btn btn-primary btn-lg d-flex align-items-center align-self-center" data-aos="fade-right" data-aos-anchor-placement="top-bottom">

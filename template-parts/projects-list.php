@@ -1,9 +1,9 @@
 <?php 
-$args = array(
+$args = [
   'post_type' => 'projects', 
   'posts_per_page' => -1,
   'status' => 'published'
-);
+];
 
 $projects = get_posts($args);
 ?>
