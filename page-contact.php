@@ -8,7 +8,7 @@
 get_header(); ?>
 
 <main>
-  <?php get_template_part( 'template-parts/contact', 'hero' ); ?>
+  <?php get_template_part( 'template-parts/section', 'hero' ); ?>
   <?php get_template_part( 'template-parts/contact', 'contacts' ); ?>
   <?php get_template_part( 'template-parts/contact', 'form' ); ?>
   <?php get_template_part( 'template-parts/section', 'instagram' ); ?>

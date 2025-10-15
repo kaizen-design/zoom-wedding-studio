@@ -1,19 +1,33 @@
 <section class="contact-form-section">
   <div class="container-xl">
     <div class="row">
-      <div class="d-none d-md-flex col-md-6" data-aos="fade-right">
-        <img 
-          src="<?= get_template_directory_uri() ?>/assets/tmp/contact-img.webp" 
-          alt="Let's make your dream a reality together" 
-          class="section-img object-fit-cover img-fluid w-100 h-100"
-          width="570"
-          height="771"
-          loading="lazy"
-        />
-      </div>
+      <?php if($contact_image = get_field('contact_image')): ?>
+        <div class="d-none d-md-flex col-md-6" data-aos="fade-right">
+          <img 
+            src="<?= get_template_directory_uri() ?>/assets/tmp/contact-img.webp" 
+            alt="<?= get_field('contact_title') ?>" 
+            class="section-img object-fit-cover img-fluid w-100 h-100"
+            width="570"
+            height="771"
+            loading="lazy"
+          />
+        </div>
+      <?php endif; ?>  
       <div class="section-content col-md-6 d-flex flex-column">
-        <h2 class="section-title mb-0 text-center" data-aos="fade-left">Let's make your dream a reality together</h2>
-        <p class="mb-0 text-center" data-aos="fade-left" data-aos-delay="150">We’d love to hear from you. Check our availability and get a free, personalized quote from a top quality team of professionals. Gain inspiration from our portfolios. Promotional pricing and discounts are subject to discuss with our Manager.</p>
+        <?php 
+          $form_title = get_field('contact_title') ? get_field('contact_title') : get_field('form_title', 'option');
+          $form_description = get_field('contact_description') ? get_field('contact_description') : get_field('form_description', 'option');
+        ?>
+        <?php if($form_title): ?>
+          <h2 class="section-title mb-0 text-center" data-aos="fade-left">
+            <?= $form_title ?>
+          </h2>
+        <?php endif; ?>
+        <?php if($form_description): ?>
+          <p class="mb-0 text-center" data-aos="fade-left" data-aos-delay="150">
+            <?= wp_kses_post($form_description) ?>
+          </p>
+        <?php endif; ?>  
         <form class="contact-form d-flex flex-column" data-aos="fade-left" data-aos-delay="300">
           <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
             <input type="radio" class="btn-check" name="service" id="service-photo-video" value="Photo+Video" autocomplete="off" checked>

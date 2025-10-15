@@ -18,12 +18,7 @@
       <div class="masonry-grid row">
         <?php $delay = 0; ?>
         <?php while( have_rows('gallery') ): the_row(); ?>
-          <?php 
-            $video = get_sub_field('video'); 
-            if ( preg_match( '/src=[\'"]([^\'"]+)[\'"]/', $video, $matches ) ) {
-              $video = $matches[1];
-            }
-          ?>
+          <?php $video = get_sub_field('video', false); ?>
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="<?= $delay ?>" data-aos-anchor-placement="top-bottom">
             <div class="ratio ratio-16x9">
               <iframe src="<?= $video ?>" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="The Caspers Wedding Highlight"></iframe>
