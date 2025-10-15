@@ -1,4 +1,9 @@
 <?php if($project_video = get_field('project_video')): ?>
+  <?php
+    if ( preg_match( '/src=[\'"]([^\'"]+)[\'"]/', $project_video, $matches ) ) {
+      $project_video = $matches[1];
+    }  
+  ?>
   <section class="project-video" data-aos="fade-up">
     <div class="container-xl">
       <div class="row justify-content-center">
