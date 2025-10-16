@@ -304,6 +304,123 @@
             ]
         },
         {
+            "key": "field_68f0535d804a2",
+            "label": "Addons Section Images",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0
+        },
+        {
+            "key": "field_68f0536b804a3",
+            "label": "Addon Image 1",
+            "name": "addon_image_1",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Optimal size: 370x564px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": 370,
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "full"
+        },
+        {
+            "key": "field_68f053c1804a4",
+            "label": "Addon Image 2",
+            "name": "addon_image_2",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Optimal size: 370x242px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": 370,
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "full"
+        },
+        {
+            "key": "field_68f053d9804a5",
+            "label": "Addon Image 3",
+            "name": "addon_image_3",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Optimal size: 270x403px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": 270,
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "full"
+        },
+        {
+            "key": "field_68f053ff804a6",
+            "label": "Addon Image 4",
+            "name": "addon_image_4",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "Optimal size: 270x403px",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "library": "all",
+            "min_width": 270,
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "full"
+        },
+        {
             "key": "field_68f02b23e9c3a",
             "label": "Contact",
             "name": "",
@@ -409,5 +526,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1760575976
+    "modified": 1760580925
 }

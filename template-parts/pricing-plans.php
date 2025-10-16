@@ -20,6 +20,8 @@ usort( $categories, function( $a, $b ) use ( $desired_order ) {
 foreach ($categories as $category) {
   $posts_query = new WP_Query(array(
     'post_type' => 'pricing_plans',
+    'orderby' => 'date',
+    'order' => 'ASC',
     'tax_query' => array(
       array(
         'taxonomy' => 'pricing_plan_category',
