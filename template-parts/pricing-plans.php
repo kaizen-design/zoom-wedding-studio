@@ -36,7 +36,7 @@ foreach ($categories as $category) {
     $posts = array();
     while ($posts_query->have_posts()) {
       $posts_query->the_post();
-      $posts[] = get_the_ID(); // or get_the_title(), or full post object
+      $posts[] = get_the_ID();
     }
     wp_reset_postdata();
 

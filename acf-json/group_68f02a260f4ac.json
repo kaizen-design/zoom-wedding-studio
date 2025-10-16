@@ -143,7 +143,7 @@
         },
         {
             "key": "field_68f02ae7e9c39",
-            "label": "Pricing plans managing instruction",
+            "label": "Pricing Plans Management Instruction",
             "name": "",
             "aria-label": "",
             "type": "message",
@@ -526,5 +526,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1760580925
+    "modified": 1760646446
 }

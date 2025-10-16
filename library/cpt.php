@@ -76,10 +76,7 @@ function pricing_plans_cpt() {
   register_post_type('pricing_plans', $args);
 }
 
-
-// -------- custom taxonomy example ---------
-function pricing_plan_categories()
-{
+function pricing_plan_categories() {
   register_taxonomy('pricing_plan_category', ['pricing_plans'], [
     'labels' => [
       'name'               => _x('Plan Categories', 'post type general name', 'zoomwedding'),
@@ -105,3 +102,68 @@ function pricing_plan_categories()
   ]);
 }
 add_action( 'init', 'pricing_plan_categories' );
+
+add_action( 'init', 'faq_cpt' );
+function faq_cpt() {
+  $labels = array(
+    'name'                 => _x('FAQs', 'post type general name', 'zoomwedding'),
+    'singular_name'        => _x('FAQ', 'post type singular name', 'zoomwedding'),
+    'menu_name'            => _x('FAQs', 'admin menu', 'zoomwedding'),
+    'name_admin_bar'       => _x('FAQ', 'add new on admin bar', 'zoomwedding'),
+    'add_new'              => _x('Add FAQ', 'zoomwedding'),
+    'add_new_item'         => __('Add FAQ ', 'zoomwedding'),
+    'new_item'             => __('New FAQ', 'zoomwedding'),
+    'edit_item'            => __('Edit FAQ', 'zoomwedding'),
+    'view_item'            => __('View FAQ', 'zoomwedding'),
+    'all_items'            => __('FAQs', 'zoomwedding'),
+    'search_items'         => __('Search FAQs', 'zoomwedding'),
+    'parent_item_colon'    => __('FAQs:', 'zoomwedding'),
+    'not_found'            => __('No FAQs found.', 'zoomwedding'),
+    'not_found_in_trash'   => __('No FAQs found in Trash.', 'zoomwedding')
+  );
+
+  $args = array(
+    'show_in_rest'             => true,
+    'labels'                   => $labels,
+    'public'                   => false,
+    'publicly_queryable'       => true,
+    'show_ui'                  => true,
+    'show_in_menu'             => true,
+    'query_var'                => true,
+    'capability_type'          => 'post',
+    'map_meta_cap'             => true,
+    'has_archive'              => false,
+    'hierarchical'             => false,
+    'menu_position'            => null,
+    'supports'                 => array('title', 'editor'),
+    'menu_icon'                => 'dashicons-editor-help',
+  );
+  register_post_type('faq', $args);
+}
+
+function faq_categories() {
+  register_taxonomy('faq_categories', ['faq'], [
+    'labels' => [
+      'name'               => _x('FAQ Categories', 'post type general name', 'zoomwedding'),
+      'singular_name'      => _x('FAQ Category', 'post type singular name', 'zoomwedding'),
+      'menu_name'          => _x('FAQ Categories', 'admin menu', 'zoomwedding'),
+      'name_admin_bar'     => _x('FAQ Category', 'add new on admin bar', 'zoomwedding'),
+      'add_new'            => _x('Add FAQ Category', 'zoomwedding'),
+      'add_new_item'       => __('Add FAQ Category ', 'zoomwedding'),
+      'new_item'           => __('New FAQ Category', 'zoomwedding'),
+      'edit_item'          => __('Edit  FAQ Category', 'zoomwedding'),
+      'view_item'          => __('View FAQ Category', 'zoomwedding'),
+      'all_items'          => __('All FAQ Category', 'zoomwedding'),
+      'search_items'       => __('Search FAQ Categories', 'zoomwedding'),
+      'parent_item_colon'  => __('Parent FAQ Category:', 'zoomwedding'),
+      'not_found'          => __('No  FAQ Categories found.', 'zoomwedding'),
+      'not_found_in_trash' => __('No FAQ Categories found in Trash.', 'zoomwedding')
+    ],
+    'hierarchical'      => true,
+    'show_ui'           => true,
+    'show_admin_column' => true,
+    'show_in_rest'      => true,  
+    'public'            => true,
+  ]);
+}
+add_action( 'init', 'faq_categories' );
