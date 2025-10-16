@@ -1,6 +1,5 @@
 <?php
 
-// -------- custom post type example ---------
 add_action( 'init', 'projects_cpt' );
 function projects_cpt() {
   $labels = array(
@@ -21,51 +20,88 @@ function projects_cpt() {
   );
 
   $args = array(
-    'show_in_rest'              => true,
-    'labels'                 => $labels,
-    'public'                 => true,
+    'show_in_rest'             => true,
+    'labels'                   => $labels,
+    'public'                   => true,
     'publicly_queryable'       => true,
-    'show_ui'                => true,
+    'show_ui'                  => true,
     'show_in_menu'             => true,
     'query_var'                => true,
     'capability_type'          => 'post',
-    'map_meta_cap'              => true,
+    'map_meta_cap'             => true,
     'has_archive'              => false,
-    'hierarchical'           => false,
+    'hierarchical'             => false,
     'menu_position'            => null,
-    //'rewrite' => array('slug' => 'projects', 'with_front' => false),
-    'supports'               => array('title', 'thumbnail', 'editor'),
-    'menu_icon'                 => 'dashicons-portfolio',
+    'supports'                 => array('title', 'thumbnail', 'editor'),
+    'menu_icon'                => 'dashicons-portfolio',
   );
   register_post_type('projects', $args);
 }
 
+add_action( 'init', 'pricing_plans_cpt' );
+function pricing_plans_cpt() {
+  $labels = array(
+    'name'                 => _x('Pricing Plans', 'post type general name', 'zoomwedding'),
+    'singular_name'        => _x('Pricing Plan', 'post type singular name', 'zoomwedding'),
+    'menu_name'            => _x('Pricing Plans', 'admin menu', 'zoomwedding'),
+    'name_admin_bar'       => _x('Pricing Plan', 'add new on admin bar', 'zoomwedding'),
+    'add_new'              => _x('Add Pricing Plan', 'zoomwedding'),
+    'add_new_item'         => __('Add Pricing Plan ', 'zoomwedding'),
+    'new_item'             => __('New Pricing Plan', 'zoomwedding'),
+    'edit_item'            => __('Edit Pricing Plan', 'zoomwedding'),
+    'view_item'            => __('View Pricing Plan', 'zoomwedding'),
+    'all_items'            => __('Pricing Plans', 'zoomwedding'),
+    'search_items'         => __('Search Pricing Plans', 'zoomwedding'),
+    'parent_item_colon'    => __('Pricing Plans:', 'zoomwedding'),
+    'not_found'            => __('No Pricing Plans found.', 'zoomwedding'),
+    'not_found_in_trash'   => __('No Pricing Plans found in Trash.', 'zoomwedding')
+  );
+
+  $args = array(
+    'show_in_rest'             => true,
+    'labels'                   => $labels,
+    'public'                   => false,
+    'publicly_queryable'       => true,
+    'show_ui'                  => true,
+    'show_in_menu'             => true,
+    'query_var'                => true,
+    'capability_type'          => 'post',
+    'map_meta_cap'             => true,
+    'has_archive'              => false,
+    'hierarchical'             => false,
+    'menu_position'            => null,
+    'supports'                 => array('title'),
+    'menu_icon'                => 'dashicons-tag',
+  );
+  register_post_type('pricing_plans', $args);
+}
+
 
 // -------- custom taxonomy example ---------
-function custom_taxonomies_posts()
+function pricing_plan_categories()
 {
-  register_taxonomy('offene_stelle_rubrik', ['offene_stelle'], [
+  register_taxonomy('pricing_plan_category', ['pricing_plans'], [
     'labels' => [
-      'name'               => _x('Job Rubriken', 'post type general name', 'zoomwedding'),
-      'singular_name'      => _x('Job Rubrik', 'post type singular name', 'zoomwedding'),
-      'menu_name'          => _x('Job Rubriken', 'admin menu', 'zoomwedding'),
-      'name_admin_bar'     => _x('Job Rubrik', 'add new on admin bar', 'zoomwedding'),
-      'add_new'            => _x('Add Job Rubrik', 'zoomwedding'),
-      'add_new_item'       => __('Add Job Rubrik ', 'zoomwedding'),
-      'new_item'           => __('New Job Rubrik', 'zoomwedding'),
-      'edit_item'          => __('Edit Jobe Rubrik', 'zoomwedding'),
-      'view_item'          => __('View Job Rubrik', 'zoomwedding'),
-      'all_items'          => __('All Job Rubrik', 'zoomwedding'),
-      'search_items'       => __('Search Job Rubriken', 'zoomwedding'),
-      'parent_item_colon'  => __('Parent Job Rubrik:', 'zoomwedding'),
-      'not_found'          => __('No Jobe Rubriken found.', 'zoomwedding'),
-      'not_found_in_trash' => __('No Job Rubriken found in Trash.', 'zoomwedding')
+      'name'               => _x('Plan Categories', 'post type general name', 'zoomwedding'),
+      'singular_name'      => _x('Plan Category', 'post type singular name', 'zoomwedding'),
+      'menu_name'          => _x('Plan Categories', 'admin menu', 'zoomwedding'),
+      'name_admin_bar'     => _x('Plan Category', 'add new on admin bar', 'zoomwedding'),
+      'add_new'            => _x('Add Plan Category', 'zoomwedding'),
+      'add_new_item'       => __('Add Plan Category ', 'zoomwedding'),
+      'new_item'           => __('New Plan Category', 'zoomwedding'),
+      'edit_item'          => __('Edit  Plan Category', 'zoomwedding'),
+      'view_item'          => __('View Plan Category', 'zoomwedding'),
+      'all_items'          => __('All Plan Category', 'zoomwedding'),
+      'search_items'       => __('Search Plan Categories', 'zoomwedding'),
+      'parent_item_colon'  => __('Parent Plan Category:', 'zoomwedding'),
+      'not_found'          => __('No  Plan Categories found.', 'zoomwedding'),
+      'not_found_in_trash' => __('No Plan Categories found in Trash.', 'zoomwedding')
     ],
     'hierarchical'      => true,
     'show_ui'           => true,
     'show_admin_column' => true,
-    'show_in_rest'      => true,    // Needed for tax to appear in Gutenberg editor.
+    'show_in_rest'      => true,  
     'public'            => true,
   ]);
 }
-//add_action( 'init', 'custom_taxonomies_posts' );
+add_action( 'init', 'pricing_plan_categories' );
