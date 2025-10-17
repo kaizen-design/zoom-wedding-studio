@@ -18,7 +18,7 @@
             </div>
           <?php endif; ?>  
           <div class="section-video ratio ratio-16x9" data-aos="fade-up" data-aos-delay="300">
-            <iframe src="<?= $video ?>" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="The Caspers Wedding Highlight"></iframe>
+            <iframe src="<?= $video ?>" loading="lazy" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
           </div>  
         </div> 
       </div>

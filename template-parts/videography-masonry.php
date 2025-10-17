@@ -21,7 +21,7 @@
           <?php $video = get_sub_field('video', false); ?>
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="<?= $delay ?>" data-aos-anchor-placement="top-bottom">
             <div class="ratio ratio-16x9">
-              <iframe src="<?= $video ?>" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="The Caspers Wedding Highlight"></iframe>
+              <iframe src="<?= $video ?>" loading="lazy" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
             </div>
           </div>
           <?php $delay =+ 150; ?>

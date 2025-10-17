@@ -1,4 +1,4 @@
-<section class="contact-section position-relative">
+<section id="contact" class="contact-section position-relative">
   <div class="container-xl">
      <div class="row justify-content-between gy-4">
         <div class="section-content col-md-6" data-aos="fade-right">
@@ -36,10 +36,24 @@
           </form>
         </div>
         <div class="col-md-6">
-          <h2 class="section-title mb-0 mt-4 d-flex flex-column">
-            <span class="section-subtitle" data-aos="fade-left">Let's talk about</span>
-            <span class="text-uppercase" data-aos="fade-left" data-aos-delay="300">photographing and videotaping your wedding</span>
-          </h2>
+          <?php 
+            $form_subtitle = get_field('contact_subtitle') ? get_field('contact_subtitle') : get_field('form_subtitle', 'option');
+            $form_title = get_field('contact_title') ? get_field('contact_title') : get_field('form_title', 'option');
+          ?>
+          <?php if ($form_subtitle || $form_title): ?>
+            <h2 class="section-title mb-0 mt-4 d-flex flex-column">
+              <?php if($form_subtitle): ?>
+                <span class="section-subtitle" data-aos="fade-left">
+                  <?= $form_subtitle ?>
+                </span>
+              <?php endif; ?>  
+              <?php if($form_title): ?>  
+                <span class="text-uppercase" data-aos="fade-left" data-aos-delay="300">
+                  <?= $form_title ?>
+                </span>
+              <?php endif; ?>  
+            </h2>
+          <?php endif; ?>  
         </div>
      </div>
   </div>
