@@ -28,7 +28,7 @@
             <?= wp_kses_post($form_description) ?>
           </p>
         <?php endif; ?>  
-        <form class="contact-form d-flex flex-column" data-aos="fade-left" data-aos-delay="300">
+        <form id="wedding-contact-form" class="contact-form d-flex flex-column" data-aos="fade-left" data-aos-delay="300">
           <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
             <input type="radio" class="btn-check" name="service" id="service-photo-video" value="Photo+Video" autocomplete="off" checked>
             <label class="btn btn-outline-success" for="service-photo-video">Photo+Video</label>

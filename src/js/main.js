@@ -9,9 +9,52 @@ window.onload = () => {
   initPhotoSlider();
   initTeamSlider();
   initAccordion();
+  initWeddingForm();
   //initTabs();
   //initSmoothScroll();
 };
+
+function initWeddingForm() {
+  const form = document.getElementById('wedding-contact-form');
+
+  if (!form) return;
+
+  form.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+      const params = new URLSearchParams();
+
+      for (const pair of formData) {
+          params.append(pair[0], pair[1]);
+      }
+
+      fetch(ajax_obj.ajax_url, {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/x-www-form-urlencoded'
+          },
+          body: new URLSearchParams({
+              action: 'submit_wedding_form',
+              security: ajax_obj.nonce,
+              data: params.toString()
+          })
+      })
+      .then(response => response.json())
+      .then(data => {
+          if (data.success) {
+              form.innerHTML = '<p class="success text-white">' + data.data + '</p>';
+          } else {
+              // Prepend error message
+              form.insertAdjacentHTML('afterbegin', '<p class="error text-white">' + data.data + '</p>');
+          }
+      })
+      .catch(error => {
+          form.insertAdjacentHTML('afterbegin', '<p class="error text-white">An error occurred. Please try again.</p>');
+          console.error('Error:', error);
+      });
+  });
+}
 
 function initTeamSlider() {
   const $slider = document.querySelector('.team-slider');

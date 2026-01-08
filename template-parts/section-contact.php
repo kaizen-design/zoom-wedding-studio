@@ -2,7 +2,7 @@
   <div class="container-xl">
      <div class="row justify-content-between align-items-center gy-4">
         <div class="section-content col-md-6" data-aos="fade-right">
-          <form class="contact-form d-flex flex-column">
+          <form id="wedding-contact-form" class="contact-form d-flex flex-column">
             <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
               <input type="radio" class="btn-check" name="service" id="service-photo-video" value="Photo+Video" autocomplete="off" checked>
               <label class="btn btn-outline-primary" for="service-photo-video">Photo+Video</label>
